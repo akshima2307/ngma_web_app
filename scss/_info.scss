@@ -1,0 +1,174 @@
+.info{
+    position: relative;
+    overflow-x: hidden;
+}
+.info-img{
+    position: relative;
+    display: flex;
+    width: 300vw;
+    height: 23rem;
+    transition: all 0.2s;
+}
+.info-img::after{
+    content: "";
+    background-color: rgba(0,0,6,0.2);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.info-img > div > img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    box-shadow:  inset 0 0 10px rgba(0,0,0,0.4);
+}
+
+
+.hover-1{
+    transform: translateX(-100vw);
+}
+.hover-2{
+    transform: translateX(-200vw);
+}
+.hover{
+    transform: translateX(0);
+}
+
+.info-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info-content > h1{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.info-content > p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+.info-content > button{
+    padding: 1rem 4rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right bottom,#2d4386,#4060bf,#28b485);
+    margin: 2rem 0;
+    color: white;
+}
+.info-content_btns > a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    width: 20rem;
+    height: 5rem;
+    background: white;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 5px solid #2d4386;
+}
+.info-content_btns > a:not(:last-child){
+    margin-right: 2rem;
+}
+.info-content_btns > a > p{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+.info-content_btns > a > small{
+    font-size: 0.9rem;
+    color: #3d3d3d;
+}
+
+
+// Info small
+.info_small{
+    padding: 3rem;
+}
+.info_small-header{
+    margin-bottom: 2rem;
+}
+.info_small-header > h1{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+.info_small-header > p{
+    font-size: 0.9rem;
+}
+.info_small-card{
+    width: 100%;
+    height: 33rem;
+    text-align: center;
+}
+.info_small-card > img{  
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.info_small-card > button{
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right bottom,#2d4386,#4060bf,#28b485);
+    margin: 1rem 0;
+    color: white;
+}
+.info_small-card > span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3d3d3d;
+    margin: 2rem 0 1rem 0;
+    display: block;
+}
+.info_small-card > p{
+    font-size: 1rem;
+    color: #2d4386;
+}
+
+@media(max-width: 1200px){
+    .info-content_btns > a{
+        width: 18rem;
+        padding: 0.8rem;
+    }
+}
+@media(max-width: 1090px){
+    .info-content_btns > a{
+        width: 16rem;
+    }
+    .info-content_btns > a:not(:last-child){
+        margin-right: 1rem;
+    }
+}
+@media(max-width: 950px){
+    .info-content_btns > a{
+        width: 13rem;
+    }
+    .info-content_btns > a > p{
+        font-size: 1rem;
+    }
+    .info-content_btns > a > small{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 800px){
+    .info{display: block;}
+    .info_small{display: none;}
+}
+@media(max-width: 800px){
+    .info_small{display: block;}
+    .info{display: none;}
+}

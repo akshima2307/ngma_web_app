@@ -1,0 +1,97 @@
+.about{
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about_content{
+    width: 45%;
+    text-align: center;
+}
+.about_content > h1{
+    font-size: 2rem;
+    color: #304991;
+    margin-bottom: 0.5rem;
+}
+.about_content > span{
+    color: rgba(152,152,152,1.00);
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.about_content > p{
+    text-align: left;
+    color: #3d3d3d;
+    letter-spacing: 1px;
+    margin: 0 3rem;
+}
+.about_content > a{
+    display: block;
+    text-align: right;
+    color: #304991;
+}
+.about_event{
+    width: 45%;
+}
+.about_event-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.about_event-heading > div > a{
+    text-decoration: none;
+    color: black;
+}
+.about_event-cards{
+    display: flex;
+    flex-direction: column;
+}
+.about_event-card{
+    display: flex;
+    margin: 2rem 0;
+}
+.about_event-card > div:nth-child(1){
+    background-image: $Primary-linear-gradient;
+    color: white;
+    padding: 1rem 2rem;
+}
+.about_event-card > div:nth-child(2){
+    padding: 1rem;
+}
+.about_event-card > div > span{
+    color: rgba(152,152,152,1.00);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+.about_event-card > div > p{
+    width: 75%;
+    color: #3d3d3d;
+}
+
+
+@media(max-width: 1000px){
+    .about_content > p{margin: 0 1rem;}
+}
+@media(max-width: 850px){
+    .about_event-card > div > p{width: 100%;}
+    .about_event-card > div:nth-child(1) {padding: 1rem;}
+    .about_event-card > div:nth-child(2) {padding: 0.5rem;}
+    .about{margin: 3rem 2rem;}
+    .about_content > h1 {font-size: 1.5rem;}
+    .about_content > span {font-size: 1rem;}
+    .about_content > p{margin: 0;}
+}
+@media(max-width: 600px){
+    .about{flex-direction: column;}
+    .about_content{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .about_event{width: 80%;}
+}
+@media(max-width: 450px){
+    .about_content{
+        width: 100%;
+    }
+    .about_event{width: 100%;}
+}

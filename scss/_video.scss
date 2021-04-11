@@ -1,0 +1,68 @@
+.vd_container{
+    padding: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainer{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 30rem;
+    transition: all 0.2s;
+}
+.videoContainer::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    transition: all 0.2s;
+}
+.videoContainer:hover::after{
+    background: transparent;
+}
+.videoContainer_heading{
+    display: none;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 0.4rem 0;
+}
+.videoContainer_small{
+    display: none;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.videoContainer:hover .videoContainer_heading{display: block;}
+.videoContainer:hover .videoContainer_small{display: block;}
+.lg-width{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 30rem;
+}
+.videoContainer:not(:last-child){
+    margin-right: 1rem;
+}
+.videoContainer_1{
+    margin-top: 4rem;
+}
+.videoContainer_3{
+    margin-top: 4rem;
+}
+.videoContainer_6{
+    margin-top: 4rem;
+}
+.videoContainer > video{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}

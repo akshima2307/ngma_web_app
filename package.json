@@ -1,0 +1,23 @@
+{
+  "name": "ngma_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss ./style.css  -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshima2307/ngma_website.git"
+  },
+  "author": "Akshima Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshima2307/ngma_website/issues"
+  },
+  "homepage": "https://github.com/akshima2307/ngma_website#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
