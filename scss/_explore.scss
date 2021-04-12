@@ -28,6 +28,20 @@
 }
 .explore_card{
     width: 26rem;
+    position: relative;
+}
+.explore_card > i{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-size: 1.8rem;
+    color: white;
+}
+.explore_card > i::before{
+    content: "";
+    padding: 0.5rem;
+    border-radius: 3px;
+    background: #304991;
 }
 .explore_card:not(:last-child){margin-right: 1.5rem;}
 .explore_card > img{

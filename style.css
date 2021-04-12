@@ -308,7 +308,7 @@
     width: 15rem; } }
 
 .about {
-  margin: 3rem;
+  margin: 5rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
@@ -319,7 +319,9 @@
 
 .about_content > h1 {
   font-size: 2rem;
-  color: #304991;
+  background-image: linear-gradient(to right bottom, #2d4386, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
   margin-bottom: 0.5rem; }
 
 .about_content > span {
@@ -655,6 +657,9 @@ body {
   .span_1 {
     left: 2%; } }
 
+.exhibition {
+  margin: 5rem 0; }
+
 .exhibition_heading {
   margin: 3rem;
   display: flex;
@@ -664,7 +669,10 @@ body {
 .exhibition_heading > div > h1 {
   font-size: calc(1.375rem + (32 - 22) * ((100vw - 375px) / (1440 - 375)));
   line-height: 1.1;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+  background-image: linear-gradient(to right bottom, #2d4386, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .exhibition_heading > div > p {
   line-height: 1.333;
@@ -790,7 +798,21 @@ body {
   display: flex; }
 
 .explore_card {
-  width: 26rem; }
+  width: 26rem;
+  position: relative; }
+
+.explore_card > i {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  font-size: 1.8rem;
+  color: white; }
+
+.explore_card > i::before {
+  content: "";
+  padding: 0.5rem;
+  border-radius: 3px;
+  background: #304991; }
 
 .explore_card:not(:last-child) {
   margin-right: 1.5rem; }
@@ -1032,7 +1054,7 @@ body {
   position: relative;
   display: flex;
   width: 300vw;
-  height: 23rem;
+  height: 27rem;
   transition: all 0.2s; }
 
 .info-img::after {
@@ -1234,7 +1256,7 @@ body {
     border-bottom: 1px solid #ccc; } }
 
 .news_container {
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   overflow-x: hidden;
   background-color: #f0efef; }
 
@@ -1441,7 +1463,7 @@ body {
   position: relative;
   display: inline-block;
   width: 20%;
-  height: 30rem;
+  height: 40rem;
   transition: all 0.2s; }
 
 .videoContainer::after {
@@ -1481,8 +1503,8 @@ body {
 .lg-width {
   position: relative;
   display: inline-block;
-  width: 30%;
-  height: 30rem; }
+  width: 45%;
+  height: 40rem; }
 
 .videoContainer:not(:last-child) {
   margin-right: 1rem; }
@@ -1493,7 +1515,13 @@ body {
 .videoContainer_3 {
   margin-top: 4rem; }
 
-.videoContainer_6 {
+.videoContainer_5 {
+  margin-top: 4rem; }
+
+.videoContainer_7 {
+  margin-top: 4rem; }
+
+.videoContainer_9 {
   margin-top: 4rem; }
 
 .videoContainer > video {

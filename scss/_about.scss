@@ -1,5 +1,5 @@
 .about{
-    margin: 3rem;
+    margin: 5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -10,7 +10,9 @@
 }
 .about_content > h1{
     font-size: 2rem;
-    color: #304991;
+    background-image: linear-gradient(to right bottom, #2d4386, #28b485);;
+    -webkit-background-clip: text;
+    color: transparent;
     margin-bottom: 0.5rem;
 }
 .about_content > span{
