@@ -110,7 +110,7 @@ body{overflow: hidden;}
   outline: none;
   cursor: pointer;
   z-index: 12;
-  top: -32px;
+  top: -32%;
   left: -18px;
   bottom: 282px;
 }
