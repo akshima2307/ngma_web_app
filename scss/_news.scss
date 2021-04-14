@@ -1,5 +1,5 @@
 .news_container{
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 1rem 2rem 4rem 2rem;
     overflow-x: hidden;
     background-color: #f0efef;
 }
@@ -7,7 +7,7 @@
     // display: flex;
 }
 .news_col_1{
-    margin: 0 1rem;
+    margin-left: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 .news_col_2{padding: 2rem 0;}
 .news_col{
-    width: 25%;
+    width: 20%;
     height: max-content;
     margin-right: 3rem;
 }
@@ -41,9 +41,9 @@
     color: white;
     background: $Primary-linear-gradient;
     padding: 0.5rem;
-    width: 12rem;
     font-size: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .news_col_content > span{
     color: #304991;

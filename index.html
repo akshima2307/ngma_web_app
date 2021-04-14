@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1;800,400&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -22,7 +25,7 @@
 <body>
     <section class="header">
         <div class="header_div">
-            <img src="./image/blue-texture-background.jpg" alt="">
+            <img src="./image/header_background.jpg" alt="">
         </div>
         <div class="navigation">
             <img class="headerLogo" src="./image/4-NGMA - 1.png" >
@@ -30,11 +33,10 @@
                 <span class="navigation__icon">&nbsp;</span>
             </div>
             <div class="nav_links">
-                <a href="#" class="nav_link">About us</a>
-                <a href="#" class="nav_link">Events & Exhibition</a>
-                <a href="#" class="nav_link">Collection</a>
+                <a href="./aboutUs.html" class="nav_link">About us</a>
+                <a href="./events.html" class="nav_link">Events</a>
+                <a href="./collection.html" class="nav_link">Collection</a>
                 <a href="#" class="nav_link">Contact us</a>
-                <a href="#" class="nav_link">Virtual Gallery</a>
             </div>
         </div>
         <div class="headerContent">
@@ -66,7 +68,6 @@
             </div>
             <div class=" news_col_2 carousel" data-flickity='{ "groupCells": true }'>
                 <div class="news_col carousel-cell">
-                    <img src="./image/e&e_1.jpeg" alt="">
                     <div class="news_col_content">
                         <small>Exhibition</small>
                         <span>25 April 2021</span>
@@ -77,7 +78,36 @@
                     </div>
                 </div>
                 <div class="news_col carousel-cell">
-                    <img src="./image/e&e_2.jpeg" alt="">
+                    <div class="news_col_content">
+                        <small>Webinar</small>
+                        <span>25 April 2021</span>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="news_col carousel-cell">
+                    <div class="news_col_content">
+                        <small>Online Event</small>
+                        <span>25 April 2021</span>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="news_col carousel-cell">
+                    <div class="news_col_content">
+                        <small>Event</small>
+                        <span>25 April 2021</span>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="news_col carousel-cell">
                     <div class="news_col_content">
                         <small>Exhibition</small>
                         <span>25 April 2021</span>
@@ -88,40 +118,6 @@
                     </div>
                 </div>
                 <div class="news_col carousel-cell">
-                    <img src="./image/e&e_3.jpeg" alt="">
-                    <div class="news_col_content">
-                        <small>Exhibition</small>
-                        <span>25 April 2021</span>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="news_col carousel-cell">
-                    <img src="./image/e&e_4.jpeg" alt="">
-                    <div class="news_col_content">
-                        <small>Exhibition</small>
-                        <span>25 April 2021</span>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="news_col carousel-cell">
-                    <img src="./image/e&e_4.jpeg" alt="">
-                    <div class="news_col_content">
-                        <small>Exhibition</small>
-                        <span>25 April 2021</span>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="news_col carousel-cell">
-                    <img src="./image/e&e_4.jpeg" alt="">
                     <div class="news_col_content">
                         <small>Exhibition</small>
                         <span>25 April 2021</span>
@@ -290,6 +286,32 @@
             </div> -->
             
     </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-img">
+                <div class="col-img__bg">
+                    <img src="./image/header_background.jpg" alt="">
+                </div>
+                <img onmouseover="imgChange(this)" onmouseout="imgChange2(this)" src="./image/dg_1.jpg" alt="Director,NGMA">
+            </div>
+            <div class="col-content">
+                <h1>
+                    <span>Director General's Message</span>
+                </h1>
+                <h2>Adwaita Gadanayak</h2>
+                <h3>Director , NGMA , New Delhi.</h2>
+                <p class="story__text ">
+                    <span class="span_1">&ldquo;</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tenetur distinctio
+                    necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
+                    <span class="span_2">&rdquo;</span>
+                </p>
+                <button class="btn">Read more....</button>
+            </div>
+        </div>
+    </section>
     <section class="virtual_tour">
         <div class="virtual_tour-header">
             <h1>Explore what is online</h1>
@@ -335,32 +357,7 @@
             </figure>
         </div>
     </section>
-    <section class="container">
-        <div class="row">
-            <div class="col-img">
-                <div class="col-img__bg">
-                    <img src="./image/blue-texture-background.jpg" alt="">
-                </div>
-                <img onmouseover="imgChange(this)" onmouseout="imgChange2(this)" src="./image/dg_1.jpg" alt="Director,NGMA">
-            </div>
-            <div class="col-content">
-                <h1>
-                    <span>Director General's Message</span>
-                </h1>
-                <h2>Adwaita Gadanayak</h2>
-                <h3>Director , NGMA , New Delhi.</h2>
-                <p class="story__text ">
-                    <span class="span_1">&ldquo;</span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Tenetur distinctio
-                    necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
-                    <span class="span_2">&rdquo;</span>
-                </p>
-                <button class="btn">Read more....</button>
-            </div>
-        </div>
-    </section>
+    
     <section class="info_container">
         <div class="info">
             <div class="info-img">

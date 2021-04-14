@@ -1,19 +1,20 @@
 $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28b485);
 .header{
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
 .navigation{
+    font-family: 'Merriweather', serif;
     padding: 2rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav_links{
-    width: 60%;
+    width: 48%;
     display: flex;
     justify-content: space-between;
     align-items: center;
