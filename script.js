@@ -15,10 +15,7 @@ const infoBtn3 = document.querySelector('.info-btn_3');
 
 
 const move = function(num){
-    console.log(num);
-    console.log("Hey");
     if(num === 'info-btn_1'){
-        console.log("Hello");
         infoImg.classList.add('hover');
         infoBtn1.style.borderBottom = '6px solid #2d4386';
     }
@@ -53,7 +50,6 @@ const videoContainerHeading = document.getElementsByClassName('.videoContainer_h
 const videoContainersmall = document.getElementsByClassName('.videoContainer_small');
 
 const addClass = function(ele){
-    // console.log(ele);
     const vd = ele.childNodes[1];
     vd.play();
     ele.classList.add('lg-width');
@@ -101,35 +97,16 @@ const hideBtn = function(ele){
 }
 
 // Navbar position fixed
-var height = document.getElementById("artCollection").offsetTop;
-console.log(height);
-console.log(window.pageYOffset);
-
+var height = document.getElementById("news").offsetTop;
 
 window.onscroll = function(){
   const navigationLogo = document.querySelector('.navigation_logo');
   if (window.pageYOffset >= height) {
     document.getElementById('navbar').classList.add('fixed');
-    // const navLinks = document.getElementsByClassName('nav_link');
-    // const navLink = [...navLinks];
-    
-    // navLink.map(function(el){
-    //    el.style.color = "white";
-    //  });
-
-    //  navigationLogo.style.visibility = "visible";
 
   }
   else {
     document.getElementById('navbar').classList.remove('fixed');
-    // const navLinks = document.getElementsByClassName('nav_link');
-    // const navLink = [...navLinks];
-    
-    // navLink.map(function(el){
-    //    el.style.color = "#304991";
-    //  });
-    //  navigationLogo.style.visibility = "hidden";
-
   }
 };
 

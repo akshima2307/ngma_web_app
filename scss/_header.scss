@@ -8,11 +8,11 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
 }
 .navigation{
     font-family: 'Merriweather', serif;
-    padding: 1rem 3rem;
+    padding: 0.6rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #304991;
+    background: white;
     
 }
 .navigation_logo > img{
@@ -27,19 +27,16 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     align-items: center;
 }
 .nav_link{
-    color: white;
+    color: $Primary-color;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .fixed{
     position: fixed;
     top: 0%;
     width: 100%;
-    background: #304991;
     z-index: 1000;
 }
-.white{color: white;}
-
 .active{
     border-bottom: 3px solid #304991;
 }
@@ -214,14 +211,14 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     object-fit: cover;
 }
 
-$base: 0.6rem;
+$base: 0.5rem;
 
 .scrolldown_container {
  display: flex;
  justify-content: center;
  align-items: center;
  position: absolute;
-bottom: 15%;
+bottom: 10%;
 left: 50%;
 }
 

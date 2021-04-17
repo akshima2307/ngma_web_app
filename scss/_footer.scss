@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border-top: 4px solid #304991;
+    border-top: 4px solid $Primary-color;
 }
 .footer_col:not(:last-child){
     margin-right: 4rem;
@@ -98,7 +98,7 @@
 /* footer_col-2 */
 
 .footer_col-2 > i{
-    color: #304991;
+    color: $Primary-color;
     font-size: 1.5rem;
 }
 .footer_col-2 > span{
@@ -106,7 +106,7 @@
     font-size: 1.2rem;   
 }
 .footer_col-2 > small{
-    color: #304991;
+    color: $Primary-color;
     font-size: 1.2rem;
 }
 .footer_col-2 > p{
@@ -132,7 +132,7 @@
     margin: 5px;
 }
 .footer_col-2 > .circles > .circle:nth-child(2){
-    background-color: #304991;
+    background-color: $Primary-color;
     width: 10px;
     height: 10px;
     border-radius: 50%;

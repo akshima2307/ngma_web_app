@@ -29,7 +29,7 @@
         <img src="./image/4-NGMA - 1.png" alt="">
     </section>
             
-    <section id="artCollection" class="collection">     
+    <section class="collection">     
         <input class='art5' id='Art5' name='art' type='radio'>
         <label class='Art5 menu' for='Art5'>
           <div class='preview'></div>
@@ -201,7 +201,7 @@
             </div>
         </div>
     </section> -->
-    <section class="news_container">
+    <section id="news" class="news_container">
         <div class="news_row">
             <div class="news_col_1">
                 <h1>Latest News</h1>
@@ -344,6 +344,67 @@
             </div>
         </div>
     </section>
+    <section class="info_container">
+        <div class="info">
+            <div class="info-img">
+                <div>
+                    <img src="./image/img_1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./image/img_2.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="./image/Background.jpeg" alt="">
+                </div>
+            </div>
+            <div class="info-content">
+                <h1>One Museum , Three Location</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Plane your visit</button>
+                <div class="info-content_btns">
+                    <a onmouseover="move(this.className)" onmouseout="removeClasses(this.className)" class="info-btn_1">
+                        <p>NGMA, Delhi</p> 
+                        <small>Next open on Tuesday , at 9AM</small>
+                    </a>
+                    <a onmouseover="move(this.className)" onmouseout="removeClasses(this.className)" class="info-btn_2">
+                        <p>NGMA, Mumbai</p> 
+                        <small>Next open on Tuesday , at 9AM</small>
+                    </a>
+                    <a onmouseover="move(this.className)" onmouseout="removeClasses(this.className)" class="info-btn_3">
+                        <p>NGMA, Bangalore</p> 
+                        <small>Next open on Tuesday , at 9AM</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="info_small">
+            <div class="info_small-header">
+                <h1>One Museum , Three Location</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info_small-cards carousel"
+            data-flickity='{ "wrapAround": true }'>
+                <div class="info_small-card carousel-cell">
+                    <img src="./image/img_1.jpg" alt="">
+                    <span>NGMA MUMBAI</span>
+                    <p>Today Open 9AM - 5PM</p>
+                    <button>Plane your visit</button>
+                </div>
+                <div class="info_small-card carousel-cell">
+                    <img src="./image/img_2.jpeg" alt="">
+                    <span>NGMA DELHI</span>
+                    <p>Today Open 9AM - 5PM</p>
+                    <button>Plane your visit</button>
+                </div>
+                <div class="info_small-card carousel-cell">
+                    <img src="./image/Background.jpeg" alt="">
+                    <span>NGMA BANGALORE</span>
+                    <p>Today Open 9AM - 5PM</p>
+                    <button>Plane your visit</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="exhibition">
         <div class="exhibition_heading">
             <div>
@@ -475,7 +536,7 @@
                     <h2>Virtual <span>Gallery</span></h2>
                     <div>
                     </div>
-                    <a href="#">View more</a>
+                    <a href="./Pages/virtualGallery.html">View more</a>
                 </figcaption>			
             </figure>
             <figure class="effect-julia draw meet">
@@ -500,67 +561,8 @@
             </figure>
         </div>
     </section>
-    
-    <section class="info_container">
-        <div class="info">
-            <div class="info-img">
-                <div>
-                    <img src="./image/img_1.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./image/img_2.jpeg" alt="">
-                </div>
-                <div>
-                    <img src="./image/Background.jpeg" alt="">
-                </div>
-            </div>
-            <div class="info-content">
-                <h1>One Museum , Three Location</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Plane your visit</button>
-                <div class="info-content_btns">
-                    <a onmouseover="move(this.className)" onmouseout="removeClasses(this.className)" class="info-btn_1">
-                        <p>NGMA, Delhi</p> 
-                        <small>Next open on Tuesday , at 9AM</small>
-                    </a>
-                    <a onmouseover="move(this.className)" onmouseout="removeClasses(this.className)" class="info-btn_2">
-                        <p>NGMA, Mumbai</p> 
-                        <small>Next open on Tuesday , at 9AM</small>
-                    </a>
-                    <a onmouseover="move(this.className)" onmouseout="removeClasses(this.className)" class="info-btn_3">
-                        <p>NGMA, Bangalore</p> 
-                        <small>Next open on Tuesday , at 9AM</small>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="info_small">
-            <div class="info_small-header">
-                <h1>One Museum , Three Location</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="info_small-cards carousel"
-            data-flickity='{ "wrapAround": true }'>
-                <div class="info_small-card carousel-cell">
-                    <img src="./image/img_1.jpg" alt="">
-                    <span>NGMA MUMBAI</span>
-                    <p>Today Open 9AM - 5PM</p>
-                    <button>Plane your visit</button>
-                </div>
-                <div class="info_small-card carousel-cell">
-                    <img src="./image/img_2.jpeg" alt="">
-                    <span>NGMA DELHI</span>
-                    <p>Today Open 9AM - 5PM</p>
-                    <button>Plane your visit</button>
-                </div>
-                <div class="info_small-card carousel-cell">
-                    <img src="./image/Background.jpeg" alt="">
-                    <span>NGMA BANGALORE</span>
-                    <p>Today Open 9AM - 5PM</p>
-                    <button>Plane your visit</button>
-                </div>
-            </div>
-        </div>
+    <section class="sohImgContainer">
+        <img src="./image/SohamImg.jpg" alt="">
     </section>
     <section class="vd_container">
             <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_1">
@@ -585,34 +587,27 @@
                 <small class="videoContainer_small">Lorem, ipsum</small>
             </div>    
             <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_4">
-                <video class="vd" muted loop>
-                    <source src="./image/video4.mp4" type="video/mp4" />
-                </video>
-                <h3 class="videoContainer_heading">Lorem, ipsum dolor sit amet consectetur</h3>
-                <small class="videoContainer_small">Lorem, ipsum</small>
-            </div>  
-            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_5">
                 <video class="vd"  muted loop>
                     <source src="./image/video5.mp4" type="video/mp4" />
                 </video>
                 <h3 class="videoContainer_heading">Lorem, ipsum dolor sit amet consectetur</h3>
                 <small class="videoContainer_small">Lorem, ipsum</small>
             </div> 
-            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_6">
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_5">
                 <video class="vd"  muted loop>
                     <source src="./image/video6.mp4" type="video/mp4" />
                 </video>
                 <h3 class="videoContainer_heading">Lorem, ipsum dolor sit amet consectetur</h3>
                 <small class="videoContainer_small">Lorem, ipsum</small>
             </div> 
-            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_7">
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_6">
                 <video class="vd"  muted loop>
                     <source src="./image/video7.mp4" type="video/mp4" />
                 </video>
                 <h3 class="videoContainer_heading">Lorem, ipsum dolor sit amet consectetur</h3>
                 <small class="videoContainer_small">Lorem, ipsum</small>
             </div> 
-            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_8">
+            <div onmouseover="addClass(this)" onmouseout="removeClass(this)" class="videoContainer videoContainer_7">
                 <video class="vd"  muted loop>
                     <source src="./image/video8.mp4" type="video/mp4" />
                 </video>

@@ -12,7 +12,7 @@
     <title>Virtual GAllery</title>
 </head>
 <body>
-    <div class="navigation">
+    <section class="navigation">
         <a href="../index.html">
             <img class="headerLogo" src="../image/4-NGMA - 1.png" >
         </a>
@@ -21,10 +21,9 @@
             <a href="./events.html" class="nav_link">Events</a>
             <a href="./collection.html" class="nav_link">Collection</a>
             <a href="#" class="nav_link">Contact us</a>
-            <a href="#" class="nav_link">vg</a>
         </div>
-    </div>
-    <div class="gallery">
+    </section>
+    <section class="gallery">
         <figure class="gallery__item gallery__item--4"><img src="../image/2.jpg" alt="Gallery image 4"
                 class="gallery__img"></figure>
         <figure class="gallery__item gallery__item--5"><img src="../image/_1.jpg" alt="Gallery image 5"
@@ -33,48 +32,40 @@
                 class="gallery__img"></figure>
         <figure class="gallery__item gallery__item--8"><img src="../image/exhibitionPainting_3.JPG" alt="Gallery image 8"
                 class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--10"><img src="../image/IMG_3380.jpg" alt="Gallery image 10"
-                class="gallery__img"></figure>
         <figure class="gallery__item gallery__item--11"><img src="../image/IMG_3382.jpg" alt="Gallery image 11"
                 class="gallery__img"></figure>
         <figure class="gallery__item gallery__item--12"><img src="../image/IMG_3398.jpg" alt="Gallery image 12"
                 class="gallery__img"></figure>
-    </div>
-    <div class="header">
+    </section>
+    <section class="header">
         <h1>Virtual Gallery</h1>
         <p>
             NGMA was established with the objective of promoting modern art in the country. It aimed to acquire and preserve works of art from 1857 onwards. The art collection of the NGMA is vast and eclectic. The 17,000 works within it testify to a rich and resplendent past even as they pay tribute to the present. Its treasures span miniature paintings to modernist interventions and au courant contemporary expressions.
             The NGMA’s accent was always on acquisition of paintings, sculptures, graphics and later photographs. Putting together a qualitatively superior collection became a goal of critical importance. That NGMA should become a repository of works that tracked the transformation of pictorial language was always kept in view. The task became particularly significant because of the distinctive character of modern Indian art.
         </p>
-    </div>
-    <div class="">
-        <div class="vg_categories carousel">
-            <div class="vg_category carousel-cell">
+    </section>
+    <section class="vg_categories">
+            <a onclick="showPopup()" href="#" class="vg_category">
                 <img src="https://indianartideas.in//articleimages/1467109100art.jpg" alt="">
-                <a>Small Re-Production</a>
-            </div>
-            <div class="vg_category carousel-cell">
+                <h3>International Women’s Day 2020</h3>
+            </a>
+            <a onclick="showPopup()" href="#" class="vg_category">
                 <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2016/07/07/556441.jpg?itok=EU3CiWBQ" alt="">
-                <a>Big Re-Production</a>
-            </div>
-            <div class="vg_category carousel-cell">
+                <h3>Abdulrahim Appabhai Almelkar</h3>
+            </a>
+            <a onclick="showPopup()" href="#" class="vg_category">
                 <img src="https://i2.wp.com/www.hisour.com/wp-content/uploads/2017/03/National-Gallery-of-Modern-Art.jpg?fit=990%2C775&ssl=1" alt="">
-                <a>Catalogues & Monographs</a>
-            </div>
-            <div class="vg_category carousel-cell">
+                <h3> Miniature Painting</h3>
+            </a>
+            <a onclick="showPopup()" href="#" class="vg_category">
                 <img src="https://i.ytimg.com/vi/AqICfASLk_c/hqdefault.jpg" alt="">
-                <a>Portfolios</a>
-            </div>
-            <div class="vg_category carousel-cell">
+                <h3>Tanjore and Mysore Tradition</h3>
+            </a>
+            <a onclick="showPopup()" href="#" class="vg_category">
                 <img src="https://1.bp.blogspot.com/-evU_65WvktE/VwpEl6XyY8I/AAAAAAAAEgU/2lqpkB_yV5EUHeJRcjb1q1ENmlhrxJwuQ/s640/Almelkar-Invitation%2Bcard-cover.jpg" alt="">
-                <a>Picture post Cards</a>
-            </div>
-            <div class="vg_category carousel-cell">
-                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/2/2017/01/24111555/NGMAGiftvg1.jpg" alt="">
-                <a>Greeting Cards</a>
-            </div>
-        </div>
-    </div>
+                <h3>European Traveller Artists</h3>
+            </a>
+    </section>
     <footer class="footer">
         <div class="footer_col footer_col-1">
             <span class="heading">Opening Hours</span>
@@ -153,6 +144,66 @@
             </div>
         </div>
     </footer>
+
+    <section id="popup" class="popup">
+        <div class="popupContainer">
+            <a href="#" onclick="removepop()" class="popup__close">&times;</a>
+            <div class="popupheader">
+                <h1>Abdulrahim Appabhai Almelkar</h1>
+            </div>
+            <div class="popupImgSlider carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="popupImg carousel-cell">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2016/07/07/556441.jpg?itok=EU3CiWBQ" alt="">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetu </h4>
+                    <span>lorem ipsum</span>
+
+                </div>
+                <div class="popupImg carousel-cell">
+                    <img src="https://indianartideas.in//articleimages/1467109100art.jpg" alt="">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetu </h4>
+                    <span>lorem ipsum</span>
+                </div>
+                <div class="popupImg carousel-cell">
+                    <img src="https://1.bp.blogspot.com/-evU_65WvktE/VwpEl6XyY8I/AAAAAAAAEgU/2lqpkB_yV5EUHeJRcjb1q1ENmlhrxJwuQ/s640/Almelkar-Invitation%2Bcard-cover.jpg" alt="">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetu </h4>
+                    <span>lorem ipsum</span>
+                </div>
+                <div class="popupImg carousel-cell">
+                    <img src="https://i.ytimg.com/vi/AqICfASLk_c/hqdefault.jpg" alt="">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetu </h4>
+                    <span>lorem ipsum</span>
+                </div>
+            </div>
+            <div class="popContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at magnam dignissimos et corporis? Nihil recusandae cum qui alias iure reiciendis, quos possimus eius numquam provident suscipit perspiciatis sit soluta.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        const vgCategory = document.getElementsByClassName('vg_category'); 
+        const imgArray = ['https://indianartideas.in//articleimages/1467109100art.jpg',
+        'https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2016/07/07/556441.jpg?itok=EU3CiWBQ',
+        'https://i2.wp.com/www.hisour.com/wp-content/uploads/2017/03/National-Gallery-of-Modern-Art.jpg?fit=990%2C775&ssl=1'
+        ];
+        // setTimeout(function(){
+            
+        // }, 3000);
+        // function ImgChange(){
+        //     var div = vgCategory.childNodes[1];
+        //     console.log(div);
+        // }
+        // ImgChange();
+        function showPopup(){
+            const popup = document.querySelector('.popup');
+            popup.classList.add("visible");
+        }
+        function removepop(){
+            const popup = document.querySelector('.popup');
+            popup.classList.remove("visible");
+        }
+    </script>
     <!-- Card Slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

@@ -15,11 +15,12 @@ body{
   overflow-x: hidden;
 }
 .logo{
-  height: 10vh;
-  padding: 1rem 3rem;
+  position: absolute;
+  top: 2%;
+  left: 1%;
 }
 .logo > img{
-  width: 3.5rem;
+  width: 4.5rem;
 }
 .logo > .logo_heading{
   display: inline-block;
@@ -64,11 +65,12 @@ body{
 }
 
 .collection .art_collection .art {
-  height: 67vh;
-  width: 90vw;
+  height: 70vh;
+  width: 85vw;
   background: #555;
   transition: transform 2.8s 0.23s cubic-bezier(0.33, 0, 0, 1), opacity 2s 0.8s, box-shadow 0s 0s;
-  top: -10%;
+  top: 50%;
+  left: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -114,7 +116,7 @@ body{
 
 .collection {
   overflow: hidden;
-  height: 90vh;
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -141,7 +143,7 @@ body{
   display: block;
   position: absolute;
   cursor: pointer;
-  bottom: 18%;
+  bottom: 15%;
   z-index: 2;
 }
 .collection label.menu:after {
@@ -176,8 +178,8 @@ body{
 }
 
 .collection label.menu .preview {
-  width: 5rem;
-  height: 3rem;
+  width: 4rem;
+  height: 2rem;
   background: yellow;
   float: left;
   background-size: auto 100% !important;
@@ -185,7 +187,7 @@ body{
 }
 .collection label.menu .info {
   position: relative;
-  left: 85px;
+  left: 70px;
   top: 1px;
 }
 .collection label.menu h2,
@@ -218,19 +220,24 @@ body{
   opacity: 0.3;
 }
 .collection label.menu:nth-of-type(1) {
-  left: 15vw;
+  left: 70vw;
+  transform: translateX(-70%);
 }
 .collection label.menu:nth-of-type(2) {
-  left: 30vw
+  left: 60vw;
+  transform: translateX(-60%);
 }
 .collection label.menu:nth-of-type(3) {
-  left: 45vw;
+  left: 50vw;
+  transform: translateX(-50%);
 }
 .collection label.menu:nth-of-type(4) {
-  left: 60vw;
+  left: 40vw;
+  transform: translateX(-40%);
 }
 .collection label.menu:nth-of-type(5) {
-  left: 75vw;
+  left: 30vw;
+  transform: translateX(-30%);
 }
 
 .collection input.read {
@@ -313,7 +320,7 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(0px) translateY(0) scaleX(0.89);
+  transform: translateZ(0px) translateY(-50%) translateX(-50%) ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -331,49 +338,25 @@ body{
   transition: all 1s 3.5s, padding 0.3s 0s;
   opacity: 1;
 }
-.collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(1) .art .moon {
-  opacity: 1;
-  transition: all 1s 3.2s;
-}
-.collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(1) .art .trajectory {
-  opacity: 0.2;
-  transition: all 0.6s 2.9s;
-}
 .collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(1) .art .overlay {
   opacity: 1;
   top: -240px;
 }
 .collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(-2300px) translateY(0) scaleX(0.89);
+  transform: translateZ(-2300px) translateY(-50%) translateX(-50%) ;
   opacity: 1;
 }
 .collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-4600px) translateY(-50%) translateX(-50%)  ;
   opacity: 0;
 }
 .collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(-6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-6900px) translateY(-50%) translateX(-50%)  ;
   opacity: -1;
 }
 .collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(-9200px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-9200px) translateY(-50%) translateX(-50%)  ;
   opacity: -2;
-}
-.collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(-11500px) translateY(0)  scaleX(0.89);
-  opacity: -3;
-}
-.collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-13800px) translateY(0) scaleX(0.89);
-  opacity: -4;
-}
-.collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-16100px) translateY(0)  scaleX(0.89);
-  opacity: -5;
-}
-.collection input[type=radio][name=art].art1:checked + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-18400px) translateY(0) scaleX(0.89);
-  opacity: -6;
 }
 .collection input[type=radio][name=art].art1:checked + label.Art1 > .info h3 {
   color: #E8927C;
@@ -389,18 +372,6 @@ body{
 }
 .collection input[type=radio][name=art].art1:checked + label.Art5 > .info h3 {
   color: orange;
-}
-.collection input[type=radio][name=art].art1:checked + label.saturn > .info h3 {
-  color: #b29d81;
-}
-.collection input[type=radio][name=art].art1:checked + label.uranus > .info h3 {
-  color: #8dcdd8;
-}
-.collection input[type=radio][name=art].art1:checked + label.neptune > .info h3 {
-  color: #4f83e2;
-}
-.collection input[type=radio][name=art].art1:checked + label.pluto > .info h3 {
-  color: #FF8732;
 }
 .collection input[type=radio][name=art].art1:checked + label {
   opacity: 1;
@@ -446,11 +417,11 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(2300px) translateY(0) scaleX(0.89);
+  transform: translateZ(2300px) translateY(-50%) translateX(-50%) ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(-50%) translateX(-50%) ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -468,45 +439,21 @@ body{
   transition: all 1s 3.5s, padding 0.3s 0s;
   opacity: 1;
 }
-.collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(2) .art .moon {
-  opacity: 1;
-  transition: all 1s 3.2s;
-}
-.collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(2) .art .trajectory {
-  opacity: 0.2;
-  transition: all 0.6s 2.9s;
-}
 .collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(2) .art .overlay {
   opacity: 1;
   top: -240px;
 }
 .collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-2300px) translateY(-50%) translateX(-50%)  ;
   opacity: 1;
 }
 .collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-4600px) translateY(-50%) translateX(-50%)  ;
   opacity: 0;
 }
 .collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(-6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-6900px) translateY(-50%) translateX(-50%)  ;
   opacity: -1;
-}
-.collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(-9200px) translateY(0)  scaleX(0.89);
-  opacity: -2;
-}
-.collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-11500px) translateY(0)  scaleX(0.89);
-  opacity: -3;
-}
-.collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-13800px) translateY(0)  scaleX(0.89);
-  opacity: -4;
-}
-.collection input[type=radio][name=art].art2:checked + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-16100px) translateY(0)  scaleX(0.89);
-  opacity: -5;
 }
 .collection input[type=radio][name=art].art2:checked + label.Art1 > .info h3 {
   color: #E8927C;
@@ -522,18 +469,6 @@ body{
 }
 .collection input[type=radio][name=art].art2:checked + label.Art5 > .info h3 {
   color: orange;
-}
-.collection input[type=radio][name=art].art2:checked + label.saturn > .info h3 {
-  color: #b29d81;
-}
-.collection input[type=radio][name=art].art2:checked + label.uranus > .info h3 {
-  color: #8dcdd8;
-}
-.collection input[type=radio][name=art].art2:checked + label.neptune > .info h3 {
-  color: #4f83e2;
-}
-.collection input[type=radio][name=art].art2:checked + label.pluto > .info h3 {
-  color: #FF8732;
 }
 .collection input[type=radio][name=art].art2:checked + label {
   opacity: 1;
@@ -582,15 +517,15 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(-50%) translateX(-50%) ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -621,28 +556,12 @@ body{
   top: -240px;
 }
 .collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-2300px) translateY(-50%) translateX(-50%)  ;
   opacity: 1;
 }
 .collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-4600px) translateY(-50%) translateX(-50%)  ;
   opacity: 0;
-}
-.collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(-6900px) translateY(0)  scaleX(0.89);
-  opacity: -1;
-}
-.collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-9200px) translateY(0)  scaleX(0.89);
-  opacity: -2;
-}
-.collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-11500px) translateY(0)  scaleX(0.89);
-  opacity: -3;
-}
-.collection input[type=radio][name=art].art3:checked + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-13800px) translateY(0)  scaleX(0.89);
-  opacity: -4;
 }
 .collection input[type=radio][name=art].art3:checked + label.Art1 > .info h3 {
   color: #E8927C;
@@ -721,19 +640,19 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(6900px) translateY(0)  ;
   opacity: 5;
 }
 .collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(-50%) translateX(-50%)  ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -751,37 +670,14 @@ body{
   transition: all 1s 3.5s, padding 0.3s 0s;
   opacity: 1;
 }
-.collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art .moon {
-  opacity: 1;
-  transition: all 1s 3.2s;
-}
-.collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art .trajectory {
-  opacity: 0.2;
-  transition: all 0.6s 2.9s;
-}
+
 .collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art .overlay {
   opacity: 1;
   top: -240px;
 }
 .collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-2300px) translateY(-50%) translateX(-50%)  ;
   opacity: 1;
-}
-.collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
-  opacity: 0;
-}
-.collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-6900px) translateY(0)  scaleX(0.89);
-  opacity: -1;
-}
-.collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-9200px) translateY(0)  scaleX(0.89);
-  opacity: -2;
-}
-.collection input[type=radio][name=art].art4:checked + label + input + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-11500px) translateY(0)  scaleX(0.89);
-  opacity: -3;
 }
 .collection input[type=radio][name=art].art4:checked + label.Art1 > .info h3 {
   color: #E8927C;
@@ -797,18 +693,6 @@ body{
 }
 .collection input[type=radio][name=art].art4:checked + label.Art5 > .info h3 {
   color: orange;
-}
-.collection input[type=radio][name=art].art4:checked + label.saturn > .info h3 {
-  color: #b29d81;
-}
-.collection input[type=radio][name=art].art4:checked + label.uranus > .info h3 {
-  color: #8dcdd8;
-}
-.collection input[type=radio][name=art].art4:checked + label.neptune > .info h3 {
-  color: #4f83e2;
-}
-.collection input[type=radio][name=art].art4:checked + label.pluto > .info h3 {
-  color: #FF8732;
 }
 .collection input[type=radio][name=art].art4:checked + label {
   opacity: 1;
@@ -863,23 +747,23 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(9200px) translateY(0)  scaleX(0.89);
+  transform: translateZ(9200px) translateY(0)  ;
   opacity: 6;
 }
 .collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(6900px) translateY(0)  ;
   opacity: 5;
 }
 .collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(-50%) translateX(-50%) ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -909,22 +793,6 @@ body{
   opacity: 1;
   top: -240px;
 }
-.collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
-  opacity: 1;
-}
-.collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
-  opacity: 0;
-}
-.collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-6900px) translateY(0)  scaleX(0.89);
-  opacity: -1;
-}
-.collection input[type=radio][name=art].art5:checked + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-9200px) translateY(0)  scaleX(0.89);
-  opacity: -2;
-}
 .collection input[type=radio][name=art].art5:checked + label.Art1 > .info h3 {
   color: #E8927C;
 }
@@ -939,18 +807,6 @@ body{
 }
 .collection input[type=radio][name=art].art5:checked + label.Art5 > .info h3 {
   color: orange;
-}
-.collection input[type=radio][name=art].art5:checked + label.saturn > .info h3 {
-  color: #b29d81;
-}
-.collection input[type=radio][name=art].art5:checked + label.uranus > .info h3 {
-  color: #8dcdd8;
-}
-.collection input[type=radio][name=art].art5:checked + label.neptune > .info h3 {
-  color: #4f83e2;
-}
-.collection input[type=radio][name=art].art5:checked + label.pluto > .info h3 {
-  color: #FF8732;
 }
 .collection input[type=radio][name=art].art5:checked + label {
   opacity: 1;
@@ -1008,27 +864,27 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(11500px) translateY(0)  scaleX(0.89);
+  transform: translateZ(11500px) translateY(0)  ;
   opacity: 7;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(9200px) translateY(0)  scaleX(0.89);
+  transform: translateZ(9200px) translateY(0)  ;
   opacity: 6;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(6900px) translateY(0)  ;
   opacity: 5;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(0)  ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -1059,15 +915,15 @@ body{
   top: -240px;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-2300px) translateY(0)  ;
   opacity: 1;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-4600px) translateY(0)  ;
   opacity: 0;
 }
 .collection input[type=radio][name=art].art6:checked + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-6900px) translateY(0)  ;
   opacity: -1;
 }
 .collection input[type=radio][name=art].art6:checked + label.Art1 > .info h3 {
@@ -1156,31 +1012,31 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(13800px) translateY(0)  scaleX(0.89);
+  transform: translateZ(13800px) translateY(0)  ;
   opacity: 8;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(11500px) translateY(0)  scaleX(0.89);
+  transform: translateZ(11500px) translateY(0)  ;
   opacity: 7;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(9200px) translateY(0)  scaleX(0.89);
+  transform: translateZ(9200px) translateY(0)  ;
   opacity: 6;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(6900px) translateY(0)  ;
   opacity: 5;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(0)  ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -1211,11 +1067,11 @@ body{
   top: -240px;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-2300px) translateY(0)  ;
   opacity: 1;
 }
 .collection input[type=radio][name=art].art7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-4600px) translateY(0)  ;
   opacity: 0;
 }
 .collection input[type=radio][name=art].art7:checked + label.Art1 > .info h3 {
@@ -1307,35 +1163,35 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(16100px) translateY(0)  scaleX(0.89);
+  transform: translateZ(16100px) translateY(0)  ;
   opacity: 9;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(13800px) translateY(0)  scaleX(0.89);
+  transform: translateZ(13800px) translateY(0)  ;
   opacity: 8;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(11500px) translateY(0)  scaleX(0.89);
+  transform: translateZ(11500px) translateY(0)  ;
   opacity: 7;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(9200px) translateY(0)  scaleX(0.89);
+  transform: translateZ(9200px) translateY(0)  ;
   opacity: 6;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(6900px) translateY(0)  ;
   opacity: 5;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(0)  ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -1366,7 +1222,7 @@ body{
   top: -240px;
 }
 .collection input[type=radio][name=art].art8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(-2300px) translateY(0)  ;
   opacity: 1;
 }
 .collection input[type=radio][name=art].art8:checked + label.Art1 > .info h3 {
@@ -1461,39 +1317,39 @@ body{
   display: none;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(1) .art {
-  transform: translateZ(18400px) translateY(0)  scaleX(0.89);
+  transform: translateZ(18400px) translateY(0)  ;
   opacity: 10;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(2) .art {
-  transform: translateZ(16100px) translateY(0)  scaleX(0.89);
+  transform: translateZ(16100px) translateY(0)  ;
   opacity: 9;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(3) .art {
-  transform: translateZ(13800px) translateY(0)  scaleX(0.89);
+  transform: translateZ(13800px) translateY(0)  ;
   opacity: 8;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(4) .art {
-  transform: translateZ(11500px) translateY(0)  scaleX(0.89);
+  transform: translateZ(11500px) translateY(0)  ;
   opacity: 7;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(5) .art {
-  transform: translateZ(9200px) translateY(0)  scaleX(0.89);
+  transform: translateZ(9200px) translateY(0)  ;
   opacity: 6;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(6) .art {
-  transform: translateZ(6900px) translateY(0)  scaleX(0.89);
+  transform: translateZ(6900px) translateY(0)  ;
   opacity: 5;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(7) .art {
-  transform: translateZ(4600px) translateY(0)  scaleX(0.89);
+  transform: translateZ(4600px) translateY(0)  ;
   opacity: 4;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(8) .art {
-  transform: translateZ(2300px) translateY(0)  scaleX(0.89);
+  transform: translateZ(2300px) translateY(0)  ;
   opacity: 3;
 }
 .collection input[type=radio][name=art].art9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .art_collection:nth-of-type(9) .art {
-  transform: translateZ(0px) translateY(0)  scaleX(0.89);
+  transform: translateZ(0px) translateY(0)  ;
   opacity: 2;
   -webkit-animation: art 60s 3.9s infinite linear;
           animation: art 60s 3.9s infinite linear;
@@ -1577,7 +1433,7 @@ body{
   color: #fea082;
 }
 .collection .art_collection:nth-of-type(1) .art {
-  transform: translateZ(0px) translateY(0) scalex(0.89);
+  transform: translateZ(0px) translateY(0) ;
   opacity: 2;
 }
 .collection .art_collection:nth-of-type(1) .art_description {
@@ -1592,7 +1448,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(2) .art {
-  transform: translateZ(-2300px) translateY(0)  scalex(0.89);
+  transform: translateZ(-2300px) translateY(0)  ;
   opacity: 1;
 }
 .collection .art_collection:nth-of-type(2) .art_description {
@@ -1607,7 +1463,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(3) .art {
-  transform: translateZ(-4600px) translateY(0)  scalex(0.89);
+  transform: translateZ(-4600px) translateY(0)  ;
   opacity: 0;
 }
 .collection .art_collection:nth-of-type(3) .art_description {
@@ -1622,7 +1478,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(4) .art {
-  transform: translateZ(-6900px) translateY(0)  scalex(0.89);
+  transform: translateZ(-6900px) translateY(0)  ;
   opacity: -1;
 }
 .collection .art_collection:nth-of-type(4) .art_description {
@@ -1637,7 +1493,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(5) .art {
-  transform: translateZ(-9200px) translateY(0)  scalex(0.89);
+  transform: translateZ(-9200px) translateY(0)  ;
   opacity: -2;
 }
 .collection .art_collection:nth-of-type(5) .art_description {
@@ -1652,7 +1508,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(6) .art {
-  transform: translateZ(-11500px) translateY(0)  scalex(0.89);
+  transform: translateZ(-11500px) translateY(0)  ;
   opacity: -3;
 }
 .collection .art_collection:nth-of-type(6) .art_description {
@@ -1667,7 +1523,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(7) .art {
-  transform: translateZ(-13800px) translateY(0)  scalex(0.89);
+  transform: translateZ(-13800px) translateY(0)  ;
   opacity: -4;
 }
 .collection .art_collection:nth-of-type(7) .art_description {
@@ -1682,7 +1538,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(8) .art {
-  transform: translateZ(-16100px) translateY(0)  scalex(0.89);
+  transform: translateZ(-16100px) translateY(0)  ;
   opacity: -5;
 }
 .collection .art_collection:nth-of-type(8) .art_description {
@@ -1697,7 +1553,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(9) .art {
-  transform: translateZ(-18400px) translateY(0)  scalex(0.89);
+  transform: translateZ(-18400px) translateY(0)  ;
   opacity: -6;
 }
 .collection .art_collection:nth-of-type(9) .art_description {
@@ -1712,7 +1568,7 @@ body{
   transition: all 0.5s 0s;
 }
 .collection .art_collection:nth-of-type(10) .art {
-  transform: translateZ(-20700px) translateY(0)  scalex(0.89);
+  transform: translateZ(-20700px) translateY(0)  ;
   opacity: -7;
 }
 .collection .art_collection:nth-of-type(10) .art_description {

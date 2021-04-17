@@ -1,16 +1,16 @@
 .about{
-    margin: 5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 .about_content{
+    padding: 3rem;
     width: 45%;
     text-align: center;
 }
 .about_content > h1{
     font-size: 2rem;
-    background-image: linear-gradient(to right bottom, #2d4386, #28b485);;
+    background-color: $Primary-color;
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 0.5rem;
@@ -30,10 +30,12 @@
 .about_content > a{
     display: block;
     text-align: right;
-    color: #304991;
+    color: $Primary-color;
 }
 .about_event{
     width: 45%;
+    padding: 3rem;
+    background-color: #f7f7f7;
 }
 .about_event-heading{
     display: flex;
@@ -53,7 +55,7 @@
     margin: 2rem 0;
 }
 .about_event-card > div:nth-child(1){
-    background-image: $Primary-linear-gradient;
+    background-color: $Primary-color;
     color: white;
     padding: 1rem 2rem;
 }
