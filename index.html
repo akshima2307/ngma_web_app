@@ -29,7 +29,7 @@
         <img src="./image/4-NGMA - 1.png" alt="">
     </section>
             
-    <section class="collection">     
+    <section id="artCollection" class="collection">     
         <input class='art5' id='Art5' name='art' type='radio'>
         <label class='Art5 menu' for='Art5'>
           <div class='preview'></div>
@@ -163,24 +163,25 @@
             <div class="chevron"></div>
           </div>
       </section>
+      <div id="navbar" class="navigation" >
+        <div class="navigation_logo">
+            <img src="./image/4-NGMA - 1.png" alt="">
+        </div>
+        <div class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </div>
+        <div class="nav_links">
+            <a href="./Pages/aboutUs.html" id="nav_link" class="nav_link">About us</a>
+            <a href="./Pages/events.html" id="nav_link" class="nav_link">Events</a>
+            <a href="./Pages/collection.html" id="nav_link" class="nav_link">Collection</a>
+            <a href="./Pages/contactUs.html" id="nav_link" class="nav_link">Contact us</a>
+        </div>
+        </div>
     <!-- <section id="header" class="header">
         <div class="header_div">
             <img src="./image/header_background.jpg" alt="">
         </div>  
-        <div id="navbar" class="navigation" >
-            <div class="navigation_logo">
-                <img src="./image/4-NGMA - 1.png" alt="">
-            </div>
-            <div class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </div>
-            <div class="nav_links">
-                <a href="./Pages/aboutUs.html" id="nav_link" class="nav_link">About us</a>
-                <a href="./Pages/events.html" id="nav_link" class="nav_link">Events</a>
-                <a href="./Pages/collection.html" id="nav_link" class="nav_link">Collection</a>
-                <a href="./Pages/contactUs.html" id="nav_link" class="nav_link">Contact us</a>
-            </div>
-        </div>
+        
         <div class="headerContent">
             <div class="headerContentLeft">
                 <h1><span class="span_1">Space</span> to <span class="span_2">Express</span></h1>
@@ -211,11 +212,10 @@
             <div class=" news_col_2 carousel" data-flickity='{ "groupCells": true }'>
                 <div class="news_col carousel-cell">
                     <div class="news_col_content">
-                        <small>Exhibition</small>
-                        <span>25 April 2021</span>
+                        <small>Latest News</small>
+                        <span>15 April 2021</span>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Due to prevailing COVID situation GAllery will remain CLOSED for PUBLIC viewing till 15th May 2021 or until further order. 
                         </p>
                     </div>
                 </div>
@@ -315,6 +315,32 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-img">
+                <div class="col-img__bg">
+                    <img src="./image/header_background.jpg" alt="">
+                </div>
+                <img onmouseover="imgChange(this)" onmouseout="imgChange2(this)" src="./image/dg_1.jpg" alt="Director,NGMA">
+            </div>
+            <div class="col-content">
+                <h1>
+                    <span>Director General's Message</span>
+                </h1>
+                <h2>Adwaita Gadanayak</h2>
+                <h3>Director , NGMA , New Delhi.</h2>
+                <p class="story__text ">
+                    <span class="span_1">&ldquo;</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tenetur distinctio
+                    necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
+                    <span class="span_2">&rdquo;</span>
+                </p>
+                <button class="btn">Read more....</button>
             </div>
         </div>
     </section>
@@ -428,32 +454,7 @@
             </div> -->
             
     </section>
-    <section class="container">
-        <div class="row">
-            <div class="col-img">
-                <div class="col-img__bg">
-                    <img src="./image/header_background.jpg" alt="">
-                </div>
-                <img onmouseover="imgChange(this)" onmouseout="imgChange2(this)" src="./image/dg_1.jpg" alt="Director,NGMA">
-            </div>
-            <div class="col-content">
-                <h1>
-                    <span>Director General's Message</span>
-                </h1>
-                <h2>Adwaita Gadanayak</h2>
-                <h3>Director , NGMA , New Delhi.</h2>
-                <p class="story__text ">
-                    <span class="span_1">&ldquo;</span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Tenetur distinctio
-                    necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
-                    <span class="span_2">&rdquo;</span>
-                </p>
-                <button class="btn">Read more....</button>
-            </div>
-        </div>
-    </section>
+
     <section class="virtual_tour">
         <div class="virtual_tour-header">
             <h1>Explore what is online</h1>

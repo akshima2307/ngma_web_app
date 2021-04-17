@@ -101,7 +101,7 @@ const hideBtn = function(ele){
 }
 
 // Navbar position fixed
-var height = document.getElementById("header").offsetTop;
+var height = document.getElementById("artCollection").offsetTop;
 console.log(height);
 console.log(window.pageYOffset);
 
@@ -110,25 +110,25 @@ window.onscroll = function(){
   const navigationLogo = document.querySelector('.navigation_logo');
   if (window.pageYOffset >= height) {
     document.getElementById('navbar').classList.add('fixed');
-    const navLinks = document.getElementsByClassName('nav_link');
-    const navLink = [...navLinks];
+    // const navLinks = document.getElementsByClassName('nav_link');
+    // const navLink = [...navLinks];
     
-    navLink.map(function(el){
-       el.style.color = "white";
-     });
+    // navLink.map(function(el){
+    //    el.style.color = "white";
+    //  });
 
-     navigationLogo.style.visibility = "visible";
+    //  navigationLogo.style.visibility = "visible";
 
   }
   else {
     document.getElementById('navbar').classList.remove('fixed');
-    const navLinks = document.getElementsByClassName('nav_link');
-    const navLink = [...navLinks];
+    // const navLinks = document.getElementsByClassName('nav_link');
+    // const navLink = [...navLinks];
     
-    navLink.map(function(el){
-       el.style.color = "#304991";
-     });
-     navigationLogo.style.visibility = "hidden";
+    // navLink.map(function(el){
+    //    el.style.color = "#304991";
+    //  });
+    //  navigationLogo.style.visibility = "hidden";
 
   }
 };

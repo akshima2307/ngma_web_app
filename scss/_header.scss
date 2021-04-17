@@ -12,22 +12,22 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #304991;
+    
 }
-.navigation_logo{visibility: hiden;}
 .navigation_logo > img{
     width: 3.5rem;
     height: 3.5rem;
     object-fit: cover;
 }
 .nav_links{
-    color: #304991;
     width: 48%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav_link{
-    color: #304991;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
