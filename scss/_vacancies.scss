@@ -25,13 +25,29 @@
     margin-bottom: 0.6rem;
     font-size: 0.9rem;
 }
-.vacancies_col-1 > h4{
-    margin-bottom: 3rem;
+.vacancies_col-1 > a{
+    margin-bottom: 1rem;
     font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
 }
 .vacancies_col-2 > p{
     letter-spacing: 0.5px;     
     font-size: 0.9rem;}
+
+.vacancies_col-2 > a {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+.vacancies_col-2 > a:hover{
+    text-decoration: white;
+}
 .vacancies_links{
     display: flex;
     flex-direction: column;
