@@ -103,10 +103,12 @@ window.onscroll = function(){
   const navigationLogo = document.querySelector('.navigation_logo');
   if (window.pageYOffset >= height) {
     document.getElementById('navbar').classList.add('fixed');
+    document.getElementById('navbar').style.display = "flex";
 
   }
   else {
     document.getElementById('navbar').classList.remove('fixed');
+    document.getElementById('navbar').style.display = "none";
   }
 };
 

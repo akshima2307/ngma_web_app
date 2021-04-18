@@ -9,10 +9,8 @@ body{
 $Primary-color: #304991;
 .sohImgContainer{
     width: 100vw;
-    height: 22rem;
 }
 .sohImgContainer > img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }

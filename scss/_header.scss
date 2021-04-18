@@ -7,13 +7,12 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     overflow: hidden;
 }
 .navigation{
+    display: none;
     font-family: 'Merriweather', serif;
     padding: 0.6rem 3rem;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    
+    background: white;   
 }
 .navigation_logo > img{
     width: 3.5rem;
