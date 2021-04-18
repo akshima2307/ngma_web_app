@@ -16,9 +16,9 @@ body {
 
 .sohImgContainer > button {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 90%;
+  left: 95%;
+  transform: translate(-95%, -90%);
   padding: 1rem 5rem;
   font-size: 1.2rem;
   border: none;
@@ -273,7 +273,7 @@ body {
   top: 0;
   height: 100%;
   width: 50%;
-  background: #2c3e50; }
+  background: white; }
 
 .chevron:before {
   left: 0;
