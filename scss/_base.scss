@@ -39,10 +39,17 @@ $Primary-color: #304991;
         padding: 0.5rem 3rem;
         font-size: 1rem;
     }
+    .sohImgContainer > button:hover{
+        padding: 0.3rem 2rem;
+    }
 }
 @media(max-width: 450px){
     .sohImgContainer > button{
-        padding: 0.5rem 2rem;
+        padding: 0.3rem 2rem;
         font-weight: lighter;
+    }
+    .sohImgContainer > button{
+        top: 80%;
+        left: 90%;
     }
 }

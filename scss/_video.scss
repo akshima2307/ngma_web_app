@@ -47,7 +47,6 @@
     position: relative;
     display: inline-block;
     width: 45%;
-    height: 40rem;
 }
 .videoContainer:not(:last-child){
     margin-right: 1rem;
@@ -89,4 +88,8 @@
     .videoContainer_6{
         display: none;
     }
+    .videoContainer{
+        height: 30rem;
+    }
+
 }
