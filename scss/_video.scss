@@ -72,3 +72,21 @@
     height: 80%;
     object-fit: cover;
 }
+
+@media(max-width: 675px){
+    .vd_container {
+        padding: 2rem 0;
+    }
+    .videoContainer:not(:last-child) {
+        margin-right: 0.4rem;
+    }
+}
+
+@media(max-width: 500px){
+    .videoContainer_7{
+        display: none;
+    }
+    .videoContainer_6{
+        display: none;
+    }
+}

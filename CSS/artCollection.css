@@ -235,6 +235,23 @@ body{
 .collection label.menu:nth-of-type(5) {
   left: 20vw;
 }
+@media(max-width: 1200px){
+  .collection label.menu:nth-of-type(1) {
+    left: 80vw; 
+  }
+  .collection label.menu:nth-of-type(2) {
+    left: 65vw; 
+  }
+  .collection label.menu:nth-of-type(3) {
+    left: 50vw;
+  }
+  .collection label.menu:nth-of-type(4) {
+    left: 35vw;
+  }
+  .collection label.menu:nth-of-type(5) {
+    left: 20vw;
+  }
+}
 
 .collection input.read {
   display: none;
@@ -1666,8 +1683,6 @@ body{
   font-size: 4rem;
   margin-top: 7rem;
 }
-
-
 .collection .art_collection .art_description p {
   font-family: 'Merriweather', serif;
   line-height: 25px;
@@ -1675,6 +1690,13 @@ body{
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+@media(max-width: 800px){
+  .collection .art_collection .art_description p{
+    width: 80%;
+    margin: 4rem auto;
+  }
+}
+
 .collection .art_collection .art_description a {
   color: #fea082;
   font-size: 1rem;

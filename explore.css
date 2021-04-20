@@ -1,86 +1,11 @@
-// .explore{
-//     margin: 3rem;
-//     overflow-x: hidden;
-// }
-// .explore_heading{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-bottom: 3rem;
-// }
-// .explore_heading-nav{
-//     width: 50%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-// .explore_heading-nav > a{
-//     text-decoration: none;
-//     color: $Primary-color;
-//     font-size: 0.9rem;
-// }
-// .explore-nav-link-active{
-//     border-bottom: 2px solid $Primary-color;
-// }
-// .explore_cards{
-//     width: max-content;
-//     display: flex;
-// }
-// .explore_card{
-//     width: 26rem;
-//     position: relative;
-// }
-// .explore_card > i{
-//     position: absolute;
-//     top: 7%;
-//     left: 5%;
-//     font-size: 1.8rem;
-//     color: white;
-// }
-// .explore_card > i::before{
-//     content: "";
-//     padding: 0.5rem;
-//     border-radius: 3px;
-//     background: $Primary-color;
-// }
-// .explore_card:not(:last-child){margin-right: 1.5rem;}
-// .explore_card > img{
-//     width: 100%;
-//     height: 20rem;
-// }
-// .explore_card > h1{
-//     padding: 1rem 0 0.5rem 0;
-//     font-size: 1.4rem;
-//     font-weight: 600;
-//     letter-spacing: 0.5px;
-//     color: $Primary-color;
-// }
-// .explore_card > span{
-//     color: #3d3d3d;
-//     letter-spacing: 0.2px;
-//     font-size: 1rem;
-
-// }
-
-// @media(max-width: 750px){
-//     .explore{
-//         margin: 3rem 2rem;
-//     }
-//     .explore_heading-nav{width: 70%;}
-// }
-// @media(max-width: 700px){
-//     .explore{
-//         margin: 2rem;
-//     }
-// }
-// @media(max-width: 500px){
-//     .explore_card{width: 100vw;}
-//     .explore_heading-nav > a{
-//         display: none;
-//     }
-// }
-
-
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
 .explore{
     margin: 3rem 0;
     overflow-x: hidden;
@@ -115,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0 3rem;
+    padding: 2rem 0 3rem 8rem;
     width: 100vw;
     
 }
@@ -124,43 +49,17 @@
     display: block;
     list-style: none;
     border-left: 1px solid rgba(0, 0, 0, 0.502);
-    width: 15%;
-    height: 3rem;
-    text-align: center;
-}
-.explore_nav > li:nth-child(1){
-  background: #ff535f;
-}
-.explore_nav > li:nth-child(2){
-  background: #264e56;
-}
-.explore_nav > li:nth-child(3){
-  background: #feb041;
-}
-.explore_nav > li:nth-child(4){
-  background: #72a994;
-}
-.explore_nav > li:nth-child(5){
-  background: #ff7335;
-}
-.explore_nav > li:nth-child(6){
-  background: #ff535f;
+    width: 10rem;
+    height: 1.2rem;
 }
 .explore_nav > li > span{
     width: 100%;
     height: 100%;
     display: block;
-    margin-top: 0.8rem;
-    color: white;
+    position: absolute;
+    bottom: -150%;
+    left: -12%;
 }
-.explore_nav > li > small{
-  font-size: 1rem;
-  text-transform: capitalize;
-  font-weight: bold;
-  margin: 1rem 0;
-  display: block;
-}
-
 .explore_nav > li >i{
     display: none;
     font-size: 1.5rem;
@@ -173,17 +72,7 @@
 .explore_nav > li > .up-arrow-1{
     display: block;
 }
-.explore_artist-info{
-  margin: 1rem auto;
-}
-.explore_artist-info > img{
-  width: 7rem;
-  height: 9rem;
-  border-radius: 50%;
-}
-.explore_artist-info > h3{
-  text-transform: capitalize;
-}
+
 .explore_gallery{
     display: flex;
     width: 400vw;
@@ -207,7 +96,7 @@
     cursor: pointer;
 }
 .gallery > i:hover::before{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255);
 }
 .gallery > i::before{
     padding: 0.5rem;

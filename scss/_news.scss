@@ -4,17 +4,23 @@
     background-color: #f0efef;
 }
 .news_row{
-    // display: flex;
-}
-.news_col_1{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+.news_col_1{
+    flex-direction: column;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    width: 20rem;
+    background: white;
+    height: 12rem;
+    padding-left: 3rem;
+}
 .news_col_1 > h1{
-    margin-left: 3rem;
-    color: $Primary-color;
+    color: #304991;
     font-size: 1.5rem;
+    margin-top: 2rem;
     line-height: 50px;
     letter-spacing: 2px;
 }
@@ -28,25 +34,17 @@
 }
 .news_col_2{
     padding: 0.5rem 0;
+    height: max-content;
+    width: 100%;
 }
 
-.news_col{
-    position: relative;
+.news_col_content{
+    padding: 0.3rem;
     width: 20%;
     height: 12rem;
-}
-.news_col:not(:last-child){
     margin-right: 3rem;
-}
-.flickity-prev-next-button{border-radius: 0;}
-.flickity-prev-next-button.next{right: -5%;}
-.news_col_content{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0.5rem;
-    height: 100%;
-    background-color: #f7f3f3;
+    border-radius: 5px;
+    background: white;
 }
 .news_col_content > small{
     display: block;
@@ -115,29 +113,45 @@
     transform: translate(-70%, -50%) rotate(-45deg);
 }
 
-@media(max-width: 1150px){
-    .news_col:not(:last-child){
-        margin-right: 1rem;
-    }
-    .news_col{
+@media(max-width: 1250px){
+    .news_col_content{
         width: 27%;
     }
 }   
-@media(max-width: 900px){
-    .news_col{
+@media(max-width: 1055px){
+    .news_col_content{
         width: 40%;
     }
 }   
+@media(max-width: 750px){
+    .news_col_content{
+        width: 47%;
+    }
+}   
 @media(max-width: 650px){
-    .news_col{
+    .news_col_content{
         width: 90%;
     }
     .news_col_1{padding: 0 1rem;}
-    .news_col_1 > h1{
-        margin-left: 1rem;
-    }
     .news_container{
         padding: 1rem 1rem 4rem 0;
     }
     .flickity-prev-next-button{display: none;}
 }   
+
+@media(max-width: 480px){
+    .news_col_1{
+        padding-left: 1rem;
+        width: 9rem;   
+    }
+    .news_col_1 > h1{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        line-height: 28px;
+        letter-spacing: 0;
+    }
+
+    .news_col_2 {
+        width: 100%;
+    }
+}

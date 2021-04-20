@@ -33,6 +33,7 @@
     // background: #8C8;
     border-radius: 5px;
     counter-increment: carousel-cell;
+    transition: all 0.2s;
 }
 // .exhibition_card_container{
 //     margin: 3rem 0;
@@ -90,12 +91,14 @@
     transform: translateX(-50%);
     border: none;
     outline: none;
+    transition: all 0.2s;
 }
 .card:not(:last-child){margin-right: 2rem;}
 .card > img{
     width: 100%;
     height: 20rem;
     object-fit: cover;
+    transition: all 0.2s;
 }
 .card_content{
     padding: 2rem 0;
