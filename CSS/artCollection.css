@@ -1795,8 +1795,8 @@ body{
 @media(max-width: 600px){
   .collection .art_collection .art_description{
     width: 90%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20%;
+    transform: translateY(-20%);
   }
   .collection .art_collection .art_description h1{font-size: 3rem;}
   .collection .art_collection .art_description p{
