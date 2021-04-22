@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/aboutUs.css">
     <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <title>About Us</title>
 </head>
 <body>
@@ -74,140 +77,366 @@
                 </ul>
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane active"> 
-                        <div class="tab-pane-content">
-                            <p>
-                                The idea of a national art gallery to germinate and bear fruit was first mooted in 1949. It was nurtured carefully by Prime Minister Jawahar Lal Nehru and Maulana Azad, sensitive bureaucrats like Humayun Kabir and an active art community. Vice-president Dr S Radhakrishanan formally inaugurated the NGMA in the presence of Prime Minister Jawaharlal Nehru and artists and art lovers of the city on March 29, 1954. The choice of Jaipur House, one of the premier edifices of Lutyens’ Delhi, signified the envisaged high profile of the institution. Designed by architect Charles G Blomfield and his brother Francis B Blomfield, as a residence for the Maharaja of Jaipur, the butterfly-shaped building with a central dome was built in 1936. It was styled after a concept of the Central Hexagon visualised by Sir Edwin Lutyens. It was Lutyens, along with Herbert Baker, who visualised and gave shape to the new capital in Delhi. Along with buildings designed for other princely potentates like Bikaner and Hyderabad, Jaipur House girded the India Gate circle. The famous architect conceptualised a harmony of facades giving the buildings a distinctive character.
-                            </p>
-                            <p>
-                                NGMA’s inauguration was marked by an exhibition of sculptures. All the prominent sculptors of the time like Debi Prasad Roy Chowdhury, Ramkinkar Baij, Sankho Chaudhuri, Dhanraj Bhagat, Sarbari Roy Chowdhury and others had participated. The show spoke of the painstaking preparations made by NGMA’s first curator Herman Goetz. A noted German art historian, Goetz had earlier been responsible for setting up the Baroda Museum.Since Goetz’s tenure, NGMA has had a string of distinguished directors.
-
-                            </p>
-                            <p>
-                                <span>
-                                    Smt. Anita Rupavataram
-                                </span>
-                                Director
-                            </p>
-                            <div class="contact-info">
-                                <span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    xyz
-                                </span>
-                                <span>
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    1234567890
-                                </span>
-                                <span>
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    abc@xyz.com
-                                </span>
+                        <div class="tab_row_1">
+                            <div class="tab-pane-content">
+                                <p>
+                                    The idea of a national art gallery to germinate and bear fruit was first mooted in 1949. It was nurtured carefully by Prime Minister Jawahar Lal Nehru and Maulana Azad, sensitive bureaucrats like Humayun Kabir and an active art community. Vice-president Dr S Radhakrishanan formally inaugurated the NGMA in the presence of Prime Minister Jawaharlal Nehru and artists and art lovers of the city on March 29, 1954. The choice of Jaipur House, one of the premier edifices of Lutyens’ Delhi, signified the envisaged high profile of the institution. Designed by architect Charles G Blomfield and his brother Francis B Blomfield, as a residence for the Maharaja of Jaipur, the butterfly-shaped building with a central dome was built in 1936. It was styled after a concept of the Central Hexagon visualised by Sir Edwin Lutyens. It was Lutyens, along with Herbert Baker, who visualised and gave shape to the new capital in Delhi. Along with buildings designed for other princely potentates like Bikaner and Hyderabad, Jaipur House girded the India Gate circle. The famous architect conceptualised a harmony of facades giving the buildings a distinctive character.
+                                </p>
+                                <p>
+                                    NGMA’s inauguration was marked by an exhibition of sculptures. All the prominent sculptors of the time like Debi Prasad Roy Chowdhury, Ramkinkar Baij, Sankho Chaudhuri, Dhanraj Bhagat, Sarbari Roy Chowdhury and others had participated. The show spoke of the painstaking preparations made by NGMA’s first curator Herman Goetz. A noted German art historian, Goetz had earlier been responsible for setting up the Baroda Museum.Since Goetz’s tenure, NGMA has had a string of distinguished directors.
+    
+                                </p>
+                                <p>
+                                    <span>
+                                        Smt. Anita Rupavataram
+                                    </span>
+                                    Director
+                                </p>
+                                <div class="contact-info">
+                                    <span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        xyz
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        1234567890
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        abc@xyz.com
+                                    </span>
+                                </div>    
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="../image/ngma_mumbai.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/ngma_delhi.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/ngma_bangalore.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/img_2.jpeg" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <img src="https://images.financialexpress.com/2021/01/art-gallery.jpg" alt="">
+                            <h1>Advisory <span>Committe</span></h1>
+                            <div id="slider-container" class="slider owl-carousel">
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Arpana.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Arpana</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Dharmendra.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Dharmendra</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Harsh Vardhan.jpg" alt="">
+                                    </div>
+                                    <h3>Mr. Harsh Vardhan</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Kanchan.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Kanchan</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Pranam.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Pranam</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Ravendra.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Ravendra</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-RituSharma.jpg" alt="Img">
+                                    </div>  
+                                    <h3>Mrs. Ritu Sharma</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Sunil.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Sunil</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Vijayant.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Vijayant</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Viren.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Viren</h3>
+                                    <span>Designation</span>
+                                </div>
                             </div>
-                            <div>
-                                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2016/01/National-Gallery-Modern-Art-New-Delhi-copy.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="../image/img_1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="../image/img_2.jpeg" alt="">
-                            </div>
-                        </div>
+                        
                     </div> 
                     <div id="tab-2" class="tab-pane">
-                        <div class="tab-pane-content">
-                            <p>
-                                The idea of a national art gallery to germinate and bear fruit was first mooted in 1949. It was nurtured carefully by Prime Minister Jawahar Lal Nehru and Maulana Azad, sensitive bureaucrats like Humayun Kabir and an active art community. Vice-president Dr S Radhakrishanan formally inaugurated the NGMA in the presence of Prime Minister Jawaharlal Nehru and artists and art lovers of the city on March 29, 1954. The choice of Jaipur House, one of the premier edifices of Lutyens’ Delhi, signified the envisaged high profile of the institution. Designed by architect Charles G Blomfield and his brother Francis B Blomfield, as a residence for the Maharaja of Jaipur, the butterfly-shaped building with a central dome was built in 1936. It was styled after a concept of the Central Hexagon visualised by Sir Edwin Lutyens. It was Lutyens, along with Herbert Baker, who visualised and gave shape to the new capital in Delhi. Along with buildings designed for other princely potentates like Bikaner and Hyderabad, Jaipur House girded the India Gate circle. The famous architect conceptualised a harmony of facades giving the buildings a distinctive character.
-                            </p>
-                            <p>
-                                NGMA’s inauguration was marked by an exhibition of sculptures. All the prominent sculptors of the time like Debi Prasad Roy Chowdhury, Ramkinkar Baij, Sankho Chaudhuri, Dhanraj Bhagat, Sarbari Roy Chowdhury and others had participated. The show spoke of the painstaking preparations made by NGMA’s first curator Herman Goetz. A noted German art historian, Goetz had earlier been responsible for setting up the Baroda Museum.Since Goetz’s tenure, NGMA has had a string of distinguished directors.
-
-                            </p>
-                            <p>
-                                <span>
-                                    Smt. Anita Rupavataram
-                                </span>
-                                Director
-                            </p>
-                            <div class="contact-info">
-                                <span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    xyz
-                                </span>
-                                <span>
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    1234567890
-                                </span>
-                                <span>
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    abc@xyz.com
-                                </span>
+                        <div class="tab_row_1">
+                            <div class="tab-pane-content">
+                                <p>
+                                    The idea of a national art gallery to germinate and bear fruit was first mooted in 1949. It was nurtured carefully by Prime Minister Jawahar Lal Nehru and Maulana Azad, sensitive bureaucrats like Humayun Kabir and an active art community. Vice-president Dr S Radhakrishanan formally inaugurated the NGMA in the presence of Prime Minister Jawaharlal Nehru and artists and art lovers of the city on March 29, 1954. The choice of Jaipur House, one of the premier edifices of Lutyens’ Delhi, signified the envisaged high profile of the institution. Designed by architect Charles G Blomfield and his brother Francis B Blomfield, as a residence for the Maharaja of Jaipur, the butterfly-shaped building with a central dome was built in 1936. It was styled after a concept of the Central Hexagon visualised by Sir Edwin Lutyens. It was Lutyens, along with Herbert Baker, who visualised and gave shape to the new capital in Delhi. Along with buildings designed for other princely potentates like Bikaner and Hyderabad, Jaipur House girded the India Gate circle. The famous architect conceptualised a harmony of facades giving the buildings a distinctive character.
+                                </p>
+                                <p>
+                                    NGMA’s inauguration was marked by an exhibition of sculptures. All the prominent sculptors of the time like Debi Prasad Roy Chowdhury, Ramkinkar Baij, Sankho Chaudhuri, Dhanraj Bhagat, Sarbari Roy Chowdhury and others had participated. The show spoke of the painstaking preparations made by NGMA’s first curator Herman Goetz. A noted German art historian, Goetz had earlier been responsible for setting up the Baroda Museum.Since Goetz’s tenure, NGMA has had a string of distinguished directors.
+    
+                                </p>
+                                <p>
+                                    <span>
+                                        Smt. Anita Rupavataram
+                                    </span>
+                                    Director
+                                </p>
+                                <div class="contact-info">
+                                    <span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        xyz
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        1234567890
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        abc@xyz.com
+                                    </span>
+                                </div>    
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="../image/ngma_mumbai.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/ngma_delhi.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/ngma_bangalore.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/img_2.jpeg" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <img src="https://images.financialexpress.com/2021/01/art-gallery.jpg" alt="">
+                            <h1>Advisory <span>Committe</span></h1>
+                            <div id="slider-container" class="slider owl-carousel">
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Arpana.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Arpana</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Dharmendra.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Dharmendra</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Harsh Vardhan.jpg" alt="">
+                                    </div>
+                                    <h3>Mr. Harsh Vardhan</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Kanchan.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Kanchan</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Pranam.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Pranam</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Ravendra.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Ravendra</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-RituSharma.jpg" alt="Img">
+                                    </div>  
+                                    <h3>Mrs. Ritu Sharma</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Sunil.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Sunil</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Vijayant.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Vijayant</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Viren.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Viren</h3>
+                                    <span>Designation</span>
+                                </div>
                             </div>
-                            <div>
-                                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2016/01/National-Gallery-Modern-Art-New-Delhi-copy.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="../image/img_1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="../image/img_2.jpeg" alt="">
-                            </div>
-                        </div>
                     </div> 
                         
                     <div id="tab-3" class="tab-pane">
-                        <div class="tab-pane-content">
-                            <p>
-                                The idea of a national art gallery to germinate and bear fruit was first mooted in 1949. It was nurtured carefully by Prime Minister Jawahar Lal Nehru and Maulana Azad, sensitive bureaucrats like Humayun Kabir and an active art community. Vice-president Dr S Radhakrishanan formally inaugurated the NGMA in the presence of Prime Minister Jawaharlal Nehru and artists and art lovers of the city on March 29, 1954. The choice of Jaipur House, one of the premier edifices of Lutyens’ Delhi, signified the envisaged high profile of the institution. Designed by architect Charles G Blomfield and his brother Francis B Blomfield, as a residence for the Maharaja of Jaipur, the butterfly-shaped building with a central dome was built in 1936. It was styled after a concept of the Central Hexagon visualised by Sir Edwin Lutyens. It was Lutyens, along with Herbert Baker, who visualised and gave shape to the new capital in Delhi. Along with buildings designed for other princely potentates like Bikaner and Hyderabad, Jaipur House girded the India Gate circle. The famous architect conceptualised a harmony of facades giving the buildings a distinctive character.
-                            </p>
-                            <p>
-                                NGMA’s inauguration was marked by an exhibition of sculptures. All the prominent sculptors of the time like Debi Prasad Roy Chowdhury, Ramkinkar Baij, Sankho Chaudhuri, Dhanraj Bhagat, Sarbari Roy Chowdhury and others had participated. The show spoke of the painstaking preparations made by NGMA’s first curator Herman Goetz. A noted German art historian, Goetz had earlier been responsible for setting up the Baroda Museum.Since Goetz’s tenure, NGMA has had a string of distinguished directors.
-
-                            </p>
-                            <p>
-                                <span>
-                                    Smt. Anita Rupavataram
-                                </span>
-                                Director
-                            </p>
-                            <div class="contact-info">
-                                <span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    xyz
-                                </span>
-                                <span>
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    1234567890
-                                </span>
-                                <span>
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    abc@xyz.com
-                                </span>
+                        <div class="tab_row_1">
+                            <div class="tab-pane-content">
+                                <p>
+                                    The National Gallery of Modern Art, Bengaluru was set up in the premises of the Manikyavelu Mansion at 49 Palace Road, Bangalore and opened to the public on 18th February, 2009. Spread over an area of 3.5 acres, the gracious heritage building was transformed from a residence into an Art Gallery, with a display space of 1551 square meters to which a new gallery block with a display space of 1260 sq. m. was added. The architecture of the additional block was designed in such a fashion that it merges with the style and ambience of the heritage Manikyavelu Mansion while at the same time fulfilling the requirements of a modern museum.
+                                </p>
+                                <p>
+                                    The Bengaluru NGMA is run and administered as a subordinate office of the Ministry of Culture, Government of India. It is one of the three National Galleries of Modern Art - the other two being in Delhi and Mumbai.  The Gallery stands as a repository of the cultural ethos of the country and showcases Indian art starting from the early 18th century till the present times.
+                                    In addition to the permanent display of paintings and sculptures, and hosting exhibitions, a strong emphasis is also laid on educational programmes for children, adults and families, with innovative outreach and educational activities which are organized regularly at NGMA Bengaluru.
+                                </p>
+                                <p>
+                                    <span>
+                                        Smt. Anita Rupavataram
+                                    </span>
+                                    Director
+                                </p>
+                                <div class="contact-info">
+                                    <span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        xyz
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        1234567890
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        abc@xyz.com
+                                    </span>
+                                </div>    
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="../image/ngma_mumbai.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/ngma_delhi.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/ngma_bangalore.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../image/img_2.jpeg" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <img src="https://images.financialexpress.com/2021/01/art-gallery.jpg" alt="">
+                            <h1>Advisory <span>Committe</span></h1>
+                            <div id="slider-container" class="slider owl-carousel">
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Arpana.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Arpana</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Dharmendra.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Dharmendra</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Harsh Vardhan.jpg" alt="">
+                                    </div>
+                                    <h3>Mr. Harsh Vardhan</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Kanchan.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Kanchan</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Pranam.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Pranam</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Ravendra.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Ravendra</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-RituSharma.jpg" alt="Img">
+                                    </div>  
+                                    <h3>Mrs. Ritu Sharma</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Sunil.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mr. Sunil</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Vijayant.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Vijayant</h3>
+                                    <span>Designation</span>
+                                </div>
+                                <div class="slide">
+                                    <div>
+                                        <img src="../image/adv-Viren.jpg" alt="Img">
+                                    </div>
+                                    <h3>Mrs. Viren</h3>
+                                    <span>Designation</span>
+                                </div>
                             </div>
-                            <div>
-                                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2016/01/National-Gallery-Modern-Art-New-Delhi-copy.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="../image/img_1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="../image/img_2.jpeg" alt="">
-                            </div>
-                        </div>
                     </div> 
                 </div>
                 </div>
@@ -253,9 +482,9 @@
             </div>
             <button>See the detailed calender <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             <div class="logos">
-                <img src="./image/4-NGMA - 1.png" alt="">
-                <img src="./image/5-soham.png" alt="">
-                <img src="./image/MOC Final LOGO (1).png" alt="">
+                <img src="../image/4-NGMA - 1.png" alt="">
+                <img src="../image/5-soham.png" alt="">
+                <img src="../image/MOC Final LOGO (1).png" alt="">
             </div>
         </div>
 
@@ -320,6 +549,13 @@
             }
         });
 
+    </script>
+    <script>
+        $(".slider").owlCarousel({
+            items : 5,
+            loop: true,
+            autoplay: true,
+        });
     </script>
 </body>
 </html>
