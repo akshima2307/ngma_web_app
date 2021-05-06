@@ -1,86 +1,48 @@
 .explore{
-    margin: 3rem;
-    overflow-x: hidden;
-}
-.explore_heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-.explore_heading-nav{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.explore_heading-nav > a{
-    text-decoration: none;
-    color: $Primary-color;
-    font-size: 0.9rem;
-}
-.explore-nav-link-active{
-    border-bottom: 2px solid $Primary-color;
-}
-.explore_cards{
-    width: 200vw;
-    display: flex;
-    transition: all 0.2s ease-in-out;
-}
-.explore_card{
-    width: 26rem;
-    position: relative;
-}
-.explore_card > i{
-    position: absolute;
-    top: 7%;
-    left: 5%;
-    font-size: 1.8rem;
-    color: white;
-}
-.explore_card > i::before{
-    content: "";
-    padding: 0.5rem;
-    border-radius: 3px;
-    background: $Primary-color;
-}
-.explore_card:not(:last-child){margin-right: 1.5rem;}
-.explore_card > img{
-    width: 100%;
-    height: 20rem;
-}
-.explore_card > h1{
-    padding: 1rem 0 0.5rem 0;
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: $Primary-color;
-}
-.explore_card > span{
-    color: #3d3d3d;
-    letter-spacing: 0.2px;
-    font-size: 1rem;
-
-}
-
-@media(max-width: 750px){
-    .explore{
-        margin: 3rem 2rem;
+    & > h1 {
+        margin:  0 3rem 3rem 3rem;
+        font-size: calc(1.375rem + (32 - 22) * ((100vw - 375px) / (1440 - 375)));
+        line-height: 1.1;
+        color: $Primary-color;
     }
-    .explore_heading-nav{width: 70%;}
-    .explore_card > img {
-        height: 15rem;
+    &_cards{
+        & > div{
+        margin-left: -3rem;
+        }
+        & > button{
+            background: white;
+            border-radius: 0;
+        }
+        & > button:first-of-type{
+            left: 0;
+        }
+        & > button:last-of-type{
+            right: 0;
+        }
+    }
+
+    &_card{
+        position: relative;
+        width: 20%;
+        height: 20rem;
+        margin-right: 2rem;
+        border-radius: 5px;
+        & > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.2s;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        & > h2{
+            color: white;
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            transform: translate(-5%,-5%);
+        }
     }
 }
-@media(max-width: 700px){
-    .explore{
-        margin: 2rem;
-    }
-}
-@media(max-width: 600px){
-    .explore_heading-nav > a{
-        display: none;
-    }
-}
-
-

@@ -363,9 +363,6 @@
             </div>
         </div>
         <div class="exhibition_card_container">
-            <!-- <div class="slide-left">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            </div> -->
             <div class="exhibition_cards carousel"  data-flickity='{ "groupCells": true }'>
                 <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
                     <img src="./image/e&e_4.jpeg" alt="">  
@@ -455,13 +452,10 @@
                     </div>
                     <button class="cardBtn">KNOW MORE</button>
                 </div>
-            </div>
-            <!-- <div class="slide-right">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </div> -->          
+            </div>     
     </section>
 
-    <!-- one Museum 3 location section -->
+    <!-- One Museum 3 location section -->
     <section class="info_container">
         <div class="info">
             <div class="info-img">
@@ -631,55 +625,32 @@
 
         <!-- Explore collection section -->
         <section class="explore">
-            <div class="explore_heading">
-                <h1>Explore our collection</h1>
-                <div class="explore_heading-nav">
-                    <a href="#" class="explore-nav-link-active">Photos</a>
-                    <a href="#">Videos</a>
-                    <a href="#">Audios</a>
-                    <a href="#">View All</a>
-                    <div>
-                        <button class="control-prev-btn">
-                            <div class="l-arrow-circ"></div>
-                        </button>
-                        <button class="control-next-btn">
-                                <div class="r-arrow-circ"></div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="explore_cards">
-                <div class="explore_card">
-                    <img src="./image/explore_1.jpeg" alt="">
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    <h1>Lorem ipsum, dolor sit amet dolor sit amet</h1>
-                    <span>By Mrs. Pratibha Sharma</span>
-                </div>
-                <div class="explore_card">
-                    <img src="./image/explore_2.jpg" alt="">
-                    <i class="fa fa-file-audio-o" aria-hidden="true"></i>
-                    <h1>Lorem ipsum, dolor sit amet dolor sit amet</h1>
-                    <span>By Mrs. Pratibha Sharma</span>
-                </div>
-                <div class="explore_card">
+            <h1>Explore our collection</h1>
+            <div class="explore_cards carousel"  data-flickity='{ "groupCells": true , "wrapAround": true}'>
+                <a href="./Pages/collection.html" class="explore_card carousel-cell">
+                    <img src="https://lh5.ggpht.com/XIwU-lsVU7gU_FirG9uHL2SpQdnpPiUqpsvqXMFBOqXKW-cSNNb5VAcB-coR=w186-c-h268-fcrop64=1,0ff80000ff08ffff-rw-v1" alt="">
+                    <h2>Collection</h2>
+                </a>
+                <a class="explore_card carousel-cell">
+                    <img src="./image/ngma_delhi.jpg" alt="">
+                    <h2>NGMA Application</h2>
+                </a>
+                <a class="explore_card carousel-cell">
                     <img src="./image/explore_3.jpg" alt="">
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    <h1>Lorem ipsum, dolor sit amet dolor sit amet</h1>
-                    <span>By Mrs. Pratibha Sharma</span>
-                </div>
-                <div class="explore_card">
-                    <img src="./image/explore_4.jpg" alt="">
-                    <i class="fa fa-audio-o" aria-hidden="true"></i>
-                    <h1>Lorem ipsum, dolor sit amet dolor sit amet</h1>
-                    <span>By Mrs. Pratibha Sharma</span>
-                </div>
-                <div class="explore_card">
-                    <img src="./image/explore_5.jpg" alt="">
-                    <i class="fa fa-video-camera" aria-hidden="true"></i>
-                    <h1>Lorem ipsum, dolor sit amet dolor sit amet</h1>
-                    <span>By Mrs. Pratibha Sharma</span>
-                </div>
+                    <h2>Audio guide</h2>
+                </a>
+                <a href="./Pages/education.html" class="explore_card carousel-cell">
+                    <img src="https://lh3.ggpht.com/vqHhxIPZB1IGvG9rVDzDa9YtJnNH_MjV4y9G5Bj7gXW5Y5q-DjrulA8QNBs=w392-c-h316-fcrop64=1,0ce30000c826ffff-rw-v1">
+                    <h2>Educational</h2>
+                </a>
+                <a href="./Pages/restoration.html" class="explore_card carousel-cell">
+                    <img src="https://lh6.ggpht.com/5PYtIyRH0Tt5klrm9Gsl3943EQI3XlxGp-at_UNn4AnM-MtiWt92aWHR-B4i=w260-c-h127-rw-v1" alt="">
+                    <h2>Restoration</h2>
+                </a>
+                <a href="./Pages/artRef.html" class="explore_card carousel-cell">
+                    <img src="./image/artref-1.jpg" alt="">
+                    <h2>Art Reference</h2>
+                </a>
             </div>
         </section>
 

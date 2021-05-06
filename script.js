@@ -89,7 +89,6 @@ const moveleft = function (count){
 const showBtn = function(ele){
   const btn = ele.childNodes[5];
   btn.style.display = "block";
-  console.log(ele.childNodes[1]);
   ele.childNodes[1].style.transform = 'scale(1.1)';
 }
 const hideBtn = function(ele){
