@@ -19,13 +19,13 @@
         & > button:last-of-type{
             right: 0;
         }
+        & .flickity-page-dots{display: none !important;}
     }
-
     &_card{
         position: relative;
-        width: 20%;
-        height: 20rem;
-        margin-right: 2rem;
+        width: 280px;
+        height: 400px;
+        margin-right: 20px;
         border-radius: 5px;
         & > img{
             width: 100%;
@@ -41,7 +41,7 @@
             color: white;
             position: absolute;
             bottom: 5%;
-            left: 5%;
+            left: 7%;
             transform: translate(-5%,-5%);
         }
     }

@@ -1,5 +1,5 @@
 .exhibition{
-    margin: 5rem 0;
+    margin: 5rem 0 2rem 0;
 }
 .exhibition_heading{
     margin:  0 3rem 3rem 3rem;
@@ -24,10 +24,6 @@
     font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
     line-height: 1.2;
 }
-
-.exhibition_cards > div {
-    margin-left: -3rem;
-}
 .exhibition_cards > button{
     background: white;
     border-radius: 0;
@@ -38,45 +34,12 @@
 .exhibition_cards > button:last-of-type{
     right: 0;
 }
-// .exhibition_card_container{
-//     margin: 3rem 0;
-//     position: relative;
-//     overflow-x: hidden;
-//     padding-left: 3rem;
-// }
-// .slide-left{
-//     position: absolute;
-//     top: 35%;
-//     left: 0%;
-//     transform: translateY(-35%);
-//     width: 4rem;
-//     height: 8rem;
-//     background-color: rgba(255, 255, 255, 0.6);
-//     margin: auto;
-
-//     display: grid;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .slide-right{
-//     position: absolute;
-//     top: 35%;
-//     right: 0%;
-//     transform: translateY(-35%);
-//     width: 4rem;
-//     height: 8rem;
-//     background-color: rgba(255, 255, 255, 0.6);
-
-//     display: grid;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .exhibition_cards{
-//     width: 150vw;
-//     height: 33rem;
-//     display: flex;
-// }
+.exhibition_cards .flickity-page-dots{
+    display: none !important;
+}
+.exhibition_cards .flickity-slider{
+    margin-left: -3rem;
+}
 .card{
     width: 20%;
     height: max-content;
@@ -107,20 +70,24 @@
 }
 .card_content{
     padding: 2rem 0;
+    width: 90%;
 }
-.card_content > h3{
+.card_content > a{
+    font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
     text-decoration: none;
-    color: $Primary-color;
-    font-weight: 700;
+    color: #000;
 }
 .card_content > span{
-    font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
+    font-size: 1.1rem;
     font-weight: 400;
-    line-height: 1.5555;
+    line-height: 1.7555;
     display: block;
     color: #3d3d3d;
- }
-
+}
+.card_content > small{
+    font-size: 1.2rem;
+    color: $Primary-color;
+}
 
 @media(max-width: 1140px){
     .card{

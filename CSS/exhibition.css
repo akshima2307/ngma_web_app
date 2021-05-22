@@ -73,11 +73,11 @@ body{
   
 .dropdown ul li:last-child{
     padding-bottom: 0;
-  }
+}
   
  .dropdown ul li:hover{
     color: #2d4386;
-  }
+}
   
 .dropdown:before{
     content: "";
@@ -86,7 +86,7 @@ body{
     right: 20px;
     border: 8px solid;
     border-color: #2d4386 transparent transparent transparent;
-  }
+}
 .exhibition_1 > h1{
     text-align: center;
     background-image: linear-gradient(to right bottom, #2d4386, #28b485);
@@ -97,8 +97,6 @@ body{
     font-weight: 500;
     padding: 3rem 0;
 }
-
-
 
 .container--tabs {
     margin: 2rem;
