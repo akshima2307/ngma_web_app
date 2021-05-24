@@ -24,9 +24,10 @@ body{
 }
 .logo_img-1{
   left: 2%;
-  width: 12rem;
-  object-fit: contain;
-  background-color: white;
+    width: 10rem;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 5px;
 }
 .logo_img-2{
   right: 2%;
@@ -63,7 +64,6 @@ body{
   background: #555;
   transition: transform 2.8s 0.23s cubic-bezier(0.33, 0, 0, 1), opacity 2s 0.8s, box-shadow 0s 0s;
   top: -2.5%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 @-webkit-keyframes art {
