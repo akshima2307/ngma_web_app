@@ -65,8 +65,8 @@ body {
   border-bottom: 4px solid #304991; }
 
 .navigation_logo-1 {
-  width: 10rem;
-  height: 4rem;
+  width: 12rem;
+  height: 6rem;
   object-fit: contain; }
 
 .navigation_logo-2 {
@@ -79,7 +79,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-end; }
 
 .nav_links > ul {
   width: 100%;
@@ -91,7 +91,8 @@ body {
   border-right: 1px solid #999; }
 
 .nav_links > ul:not(:last-child) {
-  margin-bottom: 1.4rem; }
+  margin-bottom: 1.4rem;
+  width: 85%; }
 
 .nav_links > ul > a {
   color: #304991;
@@ -102,19 +103,20 @@ body {
 .nav_links > ul > a > img {
   width: 2.5rem;
   object-fit: contain;
-  padding-left: 0.7rem; }
+  padding-left: 0.4rem; }
 
 .nav_links > ul > a:nth-child(1) > img {
   width: 6rem; }
 
 .nav_links > ul > a:nth-child(2) > img {
-  width: 4rem; }
+  width: 3rem; }
 
 .nav_links > ul > a:nth-child(3) > img {
   width: 4rem; }
 
 .nav_links > ul > a > span {
-  padding: 0.5rem; }
+  padding: 0.3rem;
+  font-size: 0.8rem; }
 
 .nav_link {
   color: #304991;
@@ -723,15 +725,14 @@ body {
   margin-bottom: 0.5rem; }
 
 .col-content > h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #3d3d3d;
   margin-bottom: 1rem; }
 
 .col-content > p {
   width: 80%;
-  font-size: 1.1rem;
-  text-align: justify;
-  letter-spacing: 0.3px; }
+  font-size: 1.14rem;
+  text-align: justify; }
 
 .col-content > p > span {
   font-size: 5.2rem;
@@ -901,6 +902,8 @@ body {
   transition: all 0.2s; }
 
 .card > button {
+  font-family: inherit;
+  font-size: 1rem;
   display: none;
   background-color: #304991;
   width: 10rem;
@@ -912,7 +915,9 @@ body {
   transform: translateX(-50%);
   border: none;
   outline: none;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  cursor: pointer; }
 
 .card > img {
   width: 100%;
@@ -927,7 +932,8 @@ body {
 .card_content > a {
   font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  text-transform: capitalize; }
 
 .card_content > span {
   font-size: 1.1rem;
@@ -1285,7 +1291,9 @@ body {
   outline: none;
   background: #304991;
   margin: 2rem 0;
-  color: white; }
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
 
 .info-content_btns > a {
   text-align: center;
@@ -1642,8 +1650,27 @@ body {
   .vacancies > div {
     width: 90%; } }
 
+.video_heading {
+  margin: 3rem 3rem 0rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.video_heading > div > h1 {
+  font-size: calc(1.375rem + (32 - 22) * ((100vw - 375px) / (1440 - 375)));
+  line-height: 1.1;
+  margin-bottom: 0.7rem;
+  color: #304991; }
+
+.video_heading > div > a {
+  text-decoration: none;
+  color: black;
+  margin-right: 0.4rem;
+  font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
+  line-height: 1.2; }
+
 .vd_container {
-  padding: 3rem 0 1rem 0rem;
+  padding: 2rem 0 1rem 0rem;
   background-color: white;
   display: flex;
   justify-content: center;

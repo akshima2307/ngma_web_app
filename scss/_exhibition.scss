@@ -48,6 +48,8 @@
     transition: all 0.2s;
 }
 .card > button{
+    font-family: inherit;
+    font-size: 1rem;
     display: none;
     background-color: $Primary-color;
     width: 10rem;
@@ -60,6 +62,8 @@
     border: none;
     outline: none;
     transition: all 0.2s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    cursor: pointer;
 }
 // .card:not(:last-child){margin-right: 2rem;}
 .card > img{
@@ -76,6 +80,7 @@
     font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
     text-decoration: none;
     color: #000;
+    text-transform: capitalize;
 }
 .card_content > span{
     font-size: 1.1rem;

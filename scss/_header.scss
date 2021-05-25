@@ -16,8 +16,8 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     border-bottom: 4px solid  $Primary-color;
 }
 .navigation_logo-1{
-   width: 10rem;
-   height: 4rem;
+   width: 12rem;
+   height: 6rem;
    object-fit: contain;
 }
 .navigation_logo-2{
@@ -30,7 +30,7 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 .nav_links > ul{
     width: 100%;
@@ -41,7 +41,10 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
 .nav_links > ul:first-child > a:not(:last-child){
     border-right: 1px solid #999; 
 }
-.nav_links > ul:not(:last-child){margin-bottom: 1.4rem;}
+.nav_links > ul:not(:last-child){
+    margin-bottom: 1.4rem;
+    width: 85%;
+}
 .nav_links > ul > a{
     color: $Primary-color;
     text-decoration: none;
@@ -51,20 +54,21 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
 .nav_links > ul > a > img{
     width: 2.5rem;
     object-fit: contain;
-    padding-left: 0.7rem;
+    padding-left: 0.4rem;
 }
 .nav_links > ul > a:nth-child(1) > img{
     width: 6rem;
 }
 
 .nav_links > ul > a:nth-child(2) > img{
-    width: 4rem;
+    width: 3rem;
 }
 .nav_links > ul > a:nth-child(3) > img{
     width: 4rem;
 }
 .nav_links > ul > a > span{
-    padding: 0.5rem;
+    padding: 0.3rem;
+    font-size: 0.8rem;
 }
 .nav_link{
     color: $Primary-color;

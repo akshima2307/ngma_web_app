@@ -67,6 +67,8 @@
     background: $Primary-color;
     margin: 2rem 0;
     color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0 ,0 ,0 , 0.4);
 }
 .info-content_btns > a{
     text-align: center;
