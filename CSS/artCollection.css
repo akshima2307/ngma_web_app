@@ -109,7 +109,6 @@ body{
 .collection {
   overflow: hidden;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
 }
 
 .collection label {
@@ -229,25 +228,22 @@ body{
   opacity: 0.3;
 }
 .collection label.menu:nth-of-type(5) {
-  left: calc(50vw + 100px + ((24px + 100px) * 1) + 0px - 369px);
-  transform: translateX(-64px);
+  left: calc(50vw + 100px + ((24px + 100px) * 1) + 0px - 500px);
 }
 .collection label.menu:nth-of-type(4) {
-  left: calc(50vw + 100px + ((24px + 100px) * 2) + 0px - 369px);
-  transform: translateX(-64px);
+  left: calc(50vw + 100px + ((24px + 100px) * 2) + 0px - 500px);
+
 }
 .collection label.menu:nth-of-type(3) {
-  left: calc(50vw + 100px + ((24px + 100px) * 3) + 0px - 369px);
-  transform: translateX(-64px);
+  left: calc(50vw + 100px + ((24px + 100px) * 3) + 0px - 500px);
+
 }
 .collection label.menu:nth-of-type(2) {
-  left: calc(50vw + 100px + ((24px + 100px) * 4) + 0px - 369px);
-  transform: translateX(-64px);
+  left: calc(50vw + 100px + ((24px + 100px) * 4) + 0px - 500px);
+
 }
 .collection label.menu:nth-of-type(1) {
-  left: calc(50vw + 100px + ((24px + 100px) * 5) + 0px - 369px);
-  transform: translateX(-64px);
-
+  left: calc(50vw + 100px + ((24px + 100px) * 5) + 0px - 500px);
 }
 
 .collection input.read {
@@ -1681,7 +1677,6 @@ body{
   margin-top: 7rem;
 }
 .collection .art_collection .art_description p {
-  font-family: 'Merriweather', serif;
   line-height: 25px;
   font-size: 1rem;
   margin-top: 2rem;
