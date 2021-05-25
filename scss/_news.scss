@@ -6,8 +6,10 @@
 .news_row{
     display: flex;
     align-items: center;
+    height: 14rem;
 }
 .news_col_1{
+    height: 100%;
     margin-left: 2rem;
     flex-direction: column;
     float: left;
@@ -15,7 +17,6 @@
     align-items: flex-start;
     width: 20rem;
     background: #f0efef;
-    height: 14rem;
     padding-left: 2rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -36,7 +37,6 @@
     cursor: pointer;
 }
 .news_col_2{
-    height: 14rem;
     padding: 0.5rem 0;
     width: 100%;
 }
@@ -44,7 +44,7 @@
 .news_col_2 .flickity-slider{margin-left: 2rem !important;}
 .news_col_2 .flickity-page-dots{display: none !important;}
 .news_col_content{
-    height: 12rem;
+    height: 13rem;
     padding: 0.3rem 0.5rem;
     width: 20%;
     margin-right: 3rem;
@@ -63,7 +63,6 @@
 }
 .news_col_content > p{
     width: 95%;
-    text-align: justify;
 }
 .news_col_content > span{
     color: $Primary-color;

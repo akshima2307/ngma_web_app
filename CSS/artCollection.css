@@ -115,10 +115,10 @@ body{
   cursor: pointer;
 }
 .collection label.Art1  > .preview {
-  background: url("../image/explore_1.jpeg") !important;
+  background: url("../image/explore_2.jpg") !important;
 }
 .collection label.Art2  > .preview {
-  background: url("../image/explore_2.jpg") !important;
+  background: url("../image/explore_1.jpeg") !important;
 }
 .collection label.Art3  > .preview {
   background: url("../image/explore_3.jpg") !important;
