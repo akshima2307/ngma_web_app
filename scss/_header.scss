@@ -8,7 +8,7 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
 }
 .navigation{
     display: none;
-    padding: 0.5rem 3rem 1rem 1rem;
+    padding: 0.5rem 3rem 1rem 3rem;
     justify-content: space-between;
     align-items: center;
     background: white;  
@@ -45,20 +45,30 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
 }
 .nav_links > ul:not(:last-child){
     margin-bottom: 0.8rem;
-    width: 65%;
+    width: 75%;
     justify-content: flex-end;
 }
-@media(min-width: 1710px){
-    .nav_links > ul:not(:last-child){
-        width: 60%;
-    }
-}
+// @media(min-width: 1710px){
+//     .nav_links > ul:not(:last-child){
+//         width: 60%;
+//     }
+// }
 .nav_links > ul > a{
     color: $Primary-color;
     text-decoration: none;
     display: flex;
     align-items: center;
     padding: 0 0.4rem;
+}
+.nav_links > ul:first-child > button{
+    background: $Primary-color;
+    outline: none;
+    border: none;
+    padding: 1rem 0.4rem;
+    color: white;
+    font-size: 1rem;
+    width: 12rem;
+    margin-left: 1rem;
 }
 .nav_links > ul > a > img{
     width: 2.5rem;

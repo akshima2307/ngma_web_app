@@ -57,7 +57,7 @@ body {
 
 .navigation {
   display: none;
-  padding: 0.5rem 3rem 1rem 1rem;
+  padding: 0.5rem 3rem 1rem 3rem;
   justify-content: space-between;
   align-items: center;
   background: white;
@@ -96,12 +96,8 @@ body {
 
 .nav_links > ul:not(:last-child) {
   margin-bottom: 0.8rem;
-  width: 65%;
+  width: 75%;
   justify-content: flex-end; }
-
-@media (min-width: 1710px) {
-  .nav_links > ul:not(:last-child) {
-    width: 60%; } }
 
 .nav_links > ul > a {
   color: #304991;
@@ -109,6 +105,16 @@ body {
   display: flex;
   align-items: center;
   padding: 0 0.4rem; }
+
+.nav_links > ul:first-child > button {
+  background: #304991;
+  outline: none;
+  border: none;
+  padding: 1rem 0.4rem;
+  color: white;
+  font-size: 1rem;
+  width: 12rem;
+  margin-left: 1rem; }
 
 .nav_links > ul > a > img {
   width: 2.5rem;
@@ -913,7 +919,7 @@ body {
   position: absolute;
   top: 3%;
   right: 5%;
-  background: rgba(0, 0, 0, 0.5);
+  background: #304991;
   color: white;
   font-size: 1rem;
   padding: 0.3rem; }
