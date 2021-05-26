@@ -57,7 +57,7 @@ body {
 
 .navigation {
   display: none;
-  padding: 0.5rem 3rem 2rem 1rem;
+  padding: 0.5rem 3rem 1rem 1rem;
   justify-content: space-between;
   align-items: center;
   background: white;
@@ -66,12 +66,13 @@ body {
 
 .navigation_logo-1 {
   width: 12rem;
-  height: 6rem;
-  object-fit: contain; }
+  height: 5rem;
+  object-fit: contain;
+  margin-right: 1rem; }
 
 .navigation_logo-2 {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   object-fit: contain; }
 
 .nav_links {
@@ -87,26 +88,35 @@ body {
   justify-content: space-between;
   align-items: center; }
 
+.nav_links > ul:first-child > a {
+  font-size: 0.7rem; }
+
 .nav_links > ul:first-child > a:not(:last-child) {
   border-right: 1px solid #999; }
 
 .nav_links > ul:not(:last-child) {
-  margin-bottom: 1.4rem;
-  width: 85%; }
+  margin-bottom: 0.8rem;
+  width: 65%;
+  justify-content: flex-end; }
+
+@media (min-width: 1710px) {
+  .nav_links > ul:not(:last-child) {
+    width: 60%; } }
 
 .nav_links > ul > a {
   color: #304991;
   text-decoration: none;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0 0.4rem; }
 
 .nav_links > ul > a > img {
   width: 2.5rem;
   object-fit: contain;
-  padding-left: 0.4rem; }
+  padding: 0 0.4rem; }
 
 .nav_links > ul > a:nth-child(1) > img {
-  width: 6rem; }
+  width: 5rem; }
 
 .nav_links > ul > a:nth-child(2) > img {
   width: 3rem; }
@@ -114,14 +124,12 @@ body {
 .nav_links > ul > a:nth-child(3) > img {
   width: 4rem; }
 
-.nav_links > ul > a > span {
-  padding: 0.3rem;
-  font-size: 0.8rem; }
-
 .nav_link {
   color: #304991;
   text-decoration: none;
   font-size: 1.2rem; }
+  .nav_link:hover {
+    text-decoration: solid !important; }
 
 .fixed {
   position: fixed;
@@ -853,7 +861,7 @@ body {
     left: 10%; } }
 
 .exhibition {
-  margin: 5rem 0 2rem 0; }
+  margin: 5rem 0 3.5rem 0; }
 
 .exhibition_heading {
   margin: 0 3rem 3rem 3rem;
@@ -901,6 +909,15 @@ body {
   border-radius: 5px;
   transition: all 0.2s; }
 
+.card > small {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem; }
+
 .card > button {
   font-family: inherit;
   font-size: 1rem;
@@ -921,7 +938,7 @@ body {
 
 .card > img {
   width: 100%;
-  height: 20rem;
+  height: 24rem;
   object-fit: cover;
   transition: all 0.2s; }
 
@@ -936,14 +953,10 @@ body {
   text-transform: capitalize; }
 
 .card_content > span {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.7555;
   display: block;
-  color: #3d3d3d; }
-
-.card_content > small {
-  font-size: 1.2rem;
   color: #304991; }
 
 @media (max-width: 1140px) {
