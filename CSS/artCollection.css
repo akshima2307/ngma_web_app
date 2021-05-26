@@ -1609,7 +1609,7 @@ body{
   text-transform: uppercase;
   z-index: 1;
 }
-.collection .art_collection .art_description:first-of-type{width: 90%;}
+.collection .art_collection .art_description:first-of-type{width: 85%;}
 .collection .art_collection .art_description:first-of-type > p {
   font-family: 'Roboto', sans-serif;
   width: 40%;
