@@ -15,11 +15,9 @@
 .footer_col-2{
     padding: 0.7rem;
     text-align: center;
-    display: grid;
-    align-items: center;
     background-color: white;
     width: 25%;
-    height: 20rem;
+    height: 22rem;
     box-shadow: 0 0.6rem 1.5rem rgba(0 , 0 , 0 , 0.1);
 } 
 .footer_col-3{
@@ -96,50 +94,63 @@
 }
 
 /* footer_col-2 */
+.footer_col-2  .footer_col-2-div{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
 
-.footer_col-2 > i{
+.footer_col-2  .footer_col-2-div > i{
     color: $Primary-color;
     font-size: 1.5rem;
 }
-.footer_col-2 > span{
+.footer_col-2  .footer_col-2-div > span{
     font-weight: 700;
     font-size: 1.2rem;   
 }
-.footer_col-2 > a{
+.footer_col-2  .footer_col-2-div > a{
     color: $Primary-color;
     font-size: 1.2rem;
     text-decoration: none;
 }
-.footer_col-2 > p{
+.footer_col-2  .footer_col-2-div > p{
     color: #3d3d3d;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 1rem;
 }
-.footer_col-2 > p > span{
+.footer_col-2  .footer_col-2-div > p > span{
     display: block;
-    font-size: 0.8rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
-.footer_col-2 > .circles{
+.footer_col-2  .footer_col-2-div > p > small{
+    color: $Primary-color;
+    font-size: 1rem;
+    border-bottom: 1px solid $Primary-color;
+}
+.footer_col-2  .footer_col-2-div> .circles{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer_col-2 > .circles > .circle{
+.footer_col-2  .footer_col-2-div > .circles > .circle{
     background-color: rgba(48, 73, 145,0.5);
     width: 8px;
     height: 8px;
     border-radius: 50%;
     margin: 5px;
 }
-.footer_col-2 > .circles > .circle:nth-child(2){
+.footer_col-2  .footer_col-2-div .circles .active-circle{
     background-color: $Primary-color;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin: 5px;
-  }
-  
+}
+.footer_col-2 .flickity-button{display: none !important;}
+.footer_col-2 .flickity-page-dots{display: none !important;}
 
 /* footer-col-3 */
 

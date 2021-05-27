@@ -167,6 +167,7 @@ body{
     height: 26rem;
     background: #f7f4f4;
     margin-bottom: 4rem;
+    box-shadow: 0 10px 20px rgba(0 , 0 , 0 , 0.1);
 }
 .shop .items .item-card > img{
     width: 100%;
@@ -194,8 +195,10 @@ body{
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.5rem;
-    color: #304991;
+    color: #9fa3b1;
+    cursor: pointer;
 }
+.item-info > i:hover{color: #304991;}
 .item-info > i::before{
     background: white;
     padding: 1rem;

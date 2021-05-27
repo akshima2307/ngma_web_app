@@ -113,13 +113,16 @@ window.onscroll = function(){
   }
 };
 
-const previewBtn = document.querySelector('.control-prev-btn');
-const nextBtn = document.querySelector('.control-next-btn');
-const exploreCards = document.querySelector('.explore_cards');
+// const previewBtn = document.querySelector('.control-prev-btn');
+// const nextBtn = document.querySelector('.control-next-btn');
+// const exploreCards = document.querySelector('.explore_cards');
 
-nextBtn.addEventListener('click', function(){
-  exploreCards.style.transform = 'translateX(-100vw)';
-});
-previewBtn.addEventListener('click', function(){
-  exploreCards.style.transform = 'translateX(0)';
-});
+// nextBtn.addEventListener('click', function(){
+//   exploreCards.style.transform = 'translateX(-100vw)';
+// });
+// previewBtn.addEventListener('click', function(){
+//   exploreCards.style.transform = 'translateX(0)';
+// });
+
+
+// Footer Cards
