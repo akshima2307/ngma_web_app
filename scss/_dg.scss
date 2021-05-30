@@ -114,18 +114,17 @@
     right: 15%;
 }
 .btn{
-    margin-top: 1rem;
-    background-color: white;
-    color: $Primary-color;
-    border: none;
-    outline: none;
     cursor: pointer;
-    text-align: right;
-    font-size: 1rem;
-    transition: all 0.2s ease-in;
+    width: max-content;
+    display: block;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: $Primary-color;
+    font-size: 1.1rem;
+    transition: all 0.1s ;
 }
 .btn:hover{
-    border-bottom: 3px solid $Primary-color;
+    border-bottom: 2px solid $Primary-color;
 }
 
 

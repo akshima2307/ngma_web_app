@@ -50,13 +50,18 @@
     color: black;
 }
 .about_event-cards{
+    margin-top: 2rem;
+    height: 16rem;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 .about_event-card{
     display: flex;
-    margin: 2rem 0;
     align-items: center;
+}
+.about_event-card:not(:last-child){
+    margin-bottom: 2rem;
 }
 .about_event-card > div:nth-child(1){
     background-color: $Primary-color;

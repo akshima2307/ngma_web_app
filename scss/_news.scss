@@ -31,7 +31,8 @@
     display: flex;
     align-items: center;
 }
-.news_view_container > span{
+.news_view_container > a{
+    text-decoration: none;
     font-size: 1.2rem;
     color: #000;
     cursor: pointer;

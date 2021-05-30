@@ -14,24 +14,23 @@ body {
   width: 100%;
   object-fit: contain; }
 
-.sohImgContainer > button {
+.sohImgContainer button {
   position: absolute;
   top: 90%;
   left: 95%;
   transform: translate(-95%, -90%);
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   font-size: 1.2rem;
   border: none;
   outline: none;
   background: rgba(48, 73, 145, 0.5);
   color: white;
   cursor: pointer;
-  font-weight: bold;
   border: none;
   transition: all 0.2s; }
 
-.sohImgContainer > button:hover {
-  padding: 1.2rem 5.3rem; }
+.sohImgContainer > a:hover {
+  background: rgba(48, 73, 145, 0.5); }
 
 @media (max-width: 800px) {
   .sohImgContainer > button {
@@ -106,14 +105,18 @@ body {
   align-items: center;
   padding: 0 0.4rem; }
 
-.nav_links > ul:first-child > button {
+.nav_links > ul:first-child > .btn {
+  text-decoration: none; }
+
+.nav_links > ul:first-child button {
+  cursor: pointer;
   background: #304991;
   outline: none;
   border: none;
   padding: 1rem 0.4rem;
   color: white;
   font-size: 1rem;
-  width: 12rem;
+  width: 8rem;
   margin-left: 1rem; }
 
 .nav_links > ul > a > img {
@@ -528,13 +531,18 @@ body {
   color: black; }
 
 .about_event-cards {
+  margin-top: 2rem;
+  height: 16rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-y: scroll; }
 
 .about_event-card {
   display: flex;
-  margin: 2rem 0;
   align-items: center; }
+
+.about_event-card:not(:last-child) {
+  margin-bottom: 2rem; }
 
 .about_event-card > div:nth-child(1) {
   background-color: #304991;
@@ -762,18 +770,17 @@ body {
   right: 15%; }
 
 .btn {
-  margin-top: 1rem;
-  background-color: white;
-  color: #304991;
-  border: none;
-  outline: none;
   cursor: pointer;
-  text-align: right;
-  font-size: 1rem;
-  transition: all 0.2s ease-in; }
+  width: max-content;
+  display: block;
+  text-decoration: none;
+  margin-top: 1rem;
+  color: #304991;
+  font-size: 1.1rem;
+  transition: all 0.1s; }
 
 .btn:hover {
-  border-bottom: 3px solid #304991; }
+  border-bottom: 2px solid #304991; }
 
 @media (max-width: 1190px) {
   .col-content {
@@ -924,7 +931,11 @@ body {
   font-size: 1rem;
   padding: 0.3rem; }
 
-.card > button {
+.card a {
+  text-decoration: none;
+  color: white; }
+
+.card button {
   font-family: inherit;
   font-size: 1rem;
   display: none;
@@ -1045,6 +1056,14 @@ body {
     bottom: 5%;
     left: 7%;
     transform: translate(-5%, -5%); }
+  .explore_card > small {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    background: #304991;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem; }
 
 .footer {
   padding: 3rem;
@@ -1319,7 +1338,11 @@ body {
   color: white;
   margin-bottom: 1rem; }
 
-.info-content > button {
+.info-content > a {
+  color: white;
+  text-decoration: none; }
+
+.info-content > a > button {
   padding: 1rem 4rem;
   font-size: 1.1rem;
   border: none;
@@ -1506,7 +1529,8 @@ body {
   display: flex;
   align-items: center; }
 
-.news_view_container > span {
+.news_view_container > a {
+  text-decoration: none;
   font-size: 1.2rem;
   color: #000;
   cursor: pointer; }
@@ -1857,7 +1881,17 @@ body {
   font-size: 68.5%; }
 
 figure.effect-julia {
-  background: #2f3238; }
+  background: #2f3238;
+  position: relative; }
+
+figure.effect-julia > small {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background: #304991;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.3rem; }
 
 figure.effect-julia img {
   max-width: none;
@@ -1936,3 +1970,58 @@ figure.effect-julia:hover p {
 @media (max-width: 450px) {
   .grid figure {
     width: 95vw; } }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all .3s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__close:link, .popup__close:visited {
+    color: #000;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
+  .popup__left {
+    width: 33.333333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.6666666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+    .popup__right > h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.2px;
+    line-height: 23px; }
+  .popup .popup_btn {
+    color: #304991; }

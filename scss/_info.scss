@@ -59,7 +59,11 @@
     color: white;
     margin-bottom: 1rem;
 }
-.info-content > button{
+.info-content > a {
+    color: white;
+    text-decoration: none;
+}
+.info-content > a > button{
     padding: 1rem 4rem;
     font-size: 1.1rem;
     border: none;

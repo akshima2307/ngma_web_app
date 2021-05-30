@@ -56,7 +56,11 @@
     font-size: 1rem;
     padding: 0.3rem;
 }
-.card > button{
+.card a{
+    text-decoration: none;
+    color: white;
+}
+.card  button{
     font-family: inherit;
     font-size: 1rem;
     display: none;
