@@ -118,7 +118,7 @@ body{
   background: url("../image/explore_2.jpg") !important;
 }
 .collection label.Art2  > .preview {
-  background: url("../image/explore_1.jpeg") !important;
+  background: url("../image/art-2.JPG") !important;
 }
 .collection label.Art3  > .preview {
   background: url("../image/explore_3.jpg") !important;
@@ -127,7 +127,7 @@ body{
   background: url("../image/explore_4.jpg") !important;
 }
 .collection label.Art5 > .preview {
-  background: url("../image/explore_5.jpg") !important;
+  background: url("../image/art-5.png") !important;
 }
 @media(max-width: 600px){
   .collection label.Art1  > .preview {

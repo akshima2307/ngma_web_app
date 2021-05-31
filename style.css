@@ -125,7 +125,7 @@ body {
   padding: 0 0.4rem; }
 
 .nav_links > ul > a:nth-child(1) > img {
-  width: 5rem; }
+  width: 3rem; }
 
 .nav_links > ul > a:nth-child(2) > img {
   width: 3rem; }
@@ -1036,9 +1036,9 @@ body {
 
 .explore_card {
   position: relative;
-  width: 20rem;
+  width: 23rem;
   height: 400px;
-  margin-right: 20px;
+  margin-right: 3rem;
   border-radius: 5px; }
   .explore_card > img {
     width: 100%;
@@ -2005,10 +2005,10 @@ figure.effect-julia:hover p {
     display: table;
     overflow: hidden; }
   .popup__left {
-    width: 33.333333%;
+    width: 40%;
     display: table-cell; }
   .popup__right {
-    width: 66.6666666%;
+    width: 60%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
@@ -2017,11 +2017,16 @@ figure.effect-julia:hover p {
       margin-bottom: 2rem; }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   .popup__text {
     font-size: 1rem;
     margin-bottom: 4rem;
     letter-spacing: 0.2px;
     line-height: 23px; }
   .popup .popup_btn {
-    color: #304991; }
+    color: white;
+    text-decoration: none;
+    background: #304991;
+    padding: 1rem 2.5rem; }

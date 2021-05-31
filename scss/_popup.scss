@@ -40,11 +40,11 @@
         overflow: hidden;
     }
     &__left{
-        width: 33.333333%;
+        width: 40%;
         display: table-cell;
     }
     &__right{
-        width: 66.6666666%;
+        width: 60%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
@@ -56,6 +56,8 @@
     &__img{
         display: block;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     &__text{
       font-size: 1rem;
@@ -64,6 +66,10 @@
       line-height: 23px;
     }
     & .popup_btn{
-        color: $Primary-color;
+        color: white;
+        text-decoration: none;
+        background: $Primary-color;
+        padding: 1rem 2.5rem;
+
     }
 }

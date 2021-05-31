@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300;1,400;1,600;1,700;1;800,400&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="../CSS/events.css">
     <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
@@ -14,23 +15,23 @@
 <body>
     <div id="navbar" class="navigation" >
         <div class="navigation_logo">
-            <img class="navigation_logo-1" src="../image/4-NGMA.png" alt="">
-            <img class="navigation_logo-2" src="../image/2-sanskriti.png" alt="">
+            <a href="../index.html"><img class="navigation_logo-1" src="../image/4-NGMA.png" alt=""></a>
+            <a href=""><img class="navigation_logo-2" src="../image/2-sanskriti.png" alt=""></a>
         </div>
         <div class="nav_links">
             <ul>
                 <a href="https://www.indiaculture.nic.in/"><img src="https://www.noticebard.com/wp-content/uploads/2017/09/internship-ministry-of-culture.png" alt=""> <span>MINISTRY OF CULTURE</span></a>
                 <a href="http://museumsofindia.gov.in/repository/home"><img src="https://lawctopus.com/clatalogue/wp-content/uploads/2020/12/Ashok_Emblem_svg.svg" alt=""> <span>MUSEUM OF INDIA</span></a>
-                <a href="./Pages/virtualTour.html"><img src="https://www.pngjoy.com/pngm/28/674346_google-logo-white-360-video-logo-png-hd.png" alt=""> <span>VIRTUAL TOUR</span></a>
-                <button>Plan your visit</button>
+                <a href="./virtualTour.html"><img src="https://www.pngjoy.com/pngm/28/674346_google-logo-white-360-video-logo-png-hd.png" alt=""> <span>VIRTUAL TOUR</span></a>
+                <a href="./planVisit.html"><button>Plan your visit</button></a>
             </ul>
             <ul>
                 <a href="./events.html" id="nav_link" class="nav_link">Events</a>
-                <a href="./exhibition.html" id="nav_link" class="nav_link">Exhibition</a>
+                <a href="./exhibition.html" id="nav_link" class="nav_link">Exhibitions</a>
                 <a href="./collection.html" id="nav_link" class="nav_link">Collection</a>
                 <a href="./shop.html" id="nav_link" class="nav_link">Shop</a>
-                <a href="./aboutUs.html" id="nav_link" class="nav_link">About Us</a>
-                <a href="./contactUs.html" id="nav_link" class="nav_link">Contact Us</a>
+                <a href="./aboutUs.html" id="nav_link" class="nav_link">About us</a>
+                <a href="./contactUs.html" id="nav_link" class="nav_link">Contact us</a>
             </ul>
         </div>
     </div>
@@ -38,17 +39,17 @@
         <div class="events_header">
             <h1 class="events_heading">Events</h1>
             <div class="events_navigation">
-                <a href="#" id="active">All</a>
-                <a href="#">Lectures</a>
-                <a href="#">Workshop and Seminars</a>
-                <a href="#">Talks & Tours</a>
-                <a href="#">Film & Performance</a>
-                <a href="#">Special Events</a>
-                <a href="#">Friends</a>
+                <a class="btn btn-all active" href="#" id="" onclick="displaycards('all') , toogleActiveClass('all')">All</a>
+                <a class="btn btn-lecture" href="#" onclick="displaycards('lecture'), toogleActiveClass('lecture')">Lectures</a>
+                <a class="btn btn-workshop" href="#" onclick="displaycards('workshop'), toogleActiveClass('workshop')">Workshop and Seminars</a>
+                <a class="btn btn-talk" href="#" onclick="displaycards('talk'), toogleActiveClass('talk')">Talks & Tours</a>
+                <a class="btn btn-film" href="#">Film & Performance</a>
+                <a class="btn btn-special" href="#">Special Events</a>
             </div>
             <div class="dropdown">
                 <div class="default_option">All</div>  
                 <ul>
+                  <li>All</li>
                   <li>Delhi</li>
                   <li>Mumbai</li>
                   <li>Bangalore</li>
@@ -58,49 +59,49 @@
 
         <div class="events_content">
             <div id="myCalendarWrapper"></div>
-            <div class="events_card">
+            <div class="events_card events_card-lecture">
                 <img src="../image/e&e_1.jpeg" alt="">
                 <div class="events_card-content">
                     <span>Friday, May 17, 2021</span>
                     <h1>Namisha Summer Art Program.</h1>
                     <small>
-                        Other <br>
+                        Lecture <br>
                         11:00 AM TO 12:00 PM<br>
                     </small>
                     <p>Due to the ongoing coronavirus health crisis, we regret that all in-person events have been canceled through June 30, 2021.</p>
                 </div>
             </div>
-            <div class="events_card">
+            <div class="events_card events_card-workshop">
                 <img src="../image/e&e_2.jpeg" alt="">
                 <div class="events_card-content">
                     <span>Friday, March 13, 2020 - June 30, 2021</span>
                     <h1>The Soul Speaker | Curator of Lives</h1>
                     <small>
-                        Other <br>
+                        Workshop and Seminars <br>
                         10:00am - 5:00pm<br>
                     </small>
                     <p>Due to the ongoing coronavirus health crisis, we regret that all in-person events have been canceled through June 30, 2021.</p>
                 </div>
             </div>
-            <div class="events_card">
+            <div class="events_card events_card-talk">
                 <img src="../image/e&e_3.jpeg" alt="">
                 <div class="events_card-content">
                     <span>Friday, March 13, 2020 - June 30, 2021</span>
                     <h1>NAIMISHA</h1>
                     <small>
-                        Other <br>
+                        Talks & Tours <br>
                         10:00am - 5:00pm<br>
                     </small>
                     <p>Due to the ongoing coronavirus health crisis, we regret that all in-person events have been canceled through June 30, 2021.</p>
                 </div>
             </div>
-            <div class="events_card">
+            <div class="events_card events_card-workshop">
                 <img src="../image/e&e_4.jpeg" alt="">
                 <div class="events_card-content">
                     <span>Friday, March 13, 2020 - June 30, 2021</span>
                     <h1>Art Adda</h1>
                     <small>
-                        Other <br>
+                        Workshop and Seminars <br>
                         10:00am - 5:00pm<br>
                     </small>
                     <p>Due to the ongoing coronavirus health crisis, we regret that all in-person events have been canceled through June 30, 2021.</p>
@@ -146,9 +147,9 @@
                 </div>
                 <button>See the detailed calender <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                 <div class="logos">
-                    <img src="./image/4-NGMA - 1.png" alt="">
-                    <img src="./image/5-soham.png" alt="">
-                    <img src="./image/MOC Final LOGO (1).png" alt="">
+                    <img src="../image/4-NGMA - 1.png" alt="">
+                    <img src="../image/5-soham.png" alt="">
+                    <img src="../image/MOC Final LOGO (1).png" alt="">
                 </div>
             </div>
 
@@ -217,10 +218,9 @@
                 </div>
             </div>
         </footer>
-=
-        <!-- Card Slider -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Card Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../events.js"></script>
     <script>
         const nextYear = new Date().getFullYear() + 1;
@@ -259,6 +259,32 @@
         $(".default_option").text(text);
         $(".dropdown ul").removeClass("active");
         });
+    </script>
+    <script>
+        displaycards("all");
+
+        function toogleActiveClass(c){
+            var btn = document.getElementsByClassName("btn");
+            //console.log(btn);
+            //btn[i].className.split("-")[1]
+                
+                for(let i = 0; i<btn.length; i++)
+                    btn[i].className.split("-")[1] === c ? btn[i].classList.add('active')  : btn[i].classList.remove('active');
+                    
+        }
+
+
+        function displaycards(c){
+            var x = document.getElementsByClassName("events_card");
+            if(c === 'all'){
+                for(let i = 0; i<x.length; i++){
+                    x[i].style.display = 'flex';
+                }
+            }else{
+                for(let i = 0; i<x.length; i++)
+                    x[i].className.split("-")[1] === c ? x[i].style.display = 'flex' : x[i].style.display = 'none';
+            }
+        }
     </script>
 </body>
 </html>

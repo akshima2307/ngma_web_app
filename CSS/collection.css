@@ -62,15 +62,20 @@ body{
     align-items: center;
     padding: 0 0.4rem; }
   
-  .nav_links > ul:first-child > button {
-    background: #304991;
-    outline: none;
-    border: none;
-    padding: 1rem 0.4rem;
-    color: white;
-    font-size: 1rem;
-    width: 12rem;
-    margin-left: 1rem; }
+    .nav_links > ul:first-child > .btn{text-decoration: none;}
+    .nav_links > ul:first-child  button{
+        cursor: pointer;
+        background: #304991;
+        outline: none;
+        border: none;
+        padding: 1rem 0.4rem;
+        color: white;
+        font-size: 1rem;
+        width: 8rem;
+        margin-left: 1rem;
+        box-shadow: 0 5px 10px rgba(0 , 0 , 0 , 0.1);
+    } 
+  
   
   .nav_links > ul > a > img {
     width: 2.5rem;
@@ -261,39 +266,57 @@ body{
 }
 
 .collection_container{
+    overflow: hidden;
     width: 90%;
     margin:  auto;
     margin-top: 0;
     margin-bottom: 5rem;
-    columns: 4;
-    column-gap: 40px;
+    columns: 3;
+    column-gap: 5rem;
+    position: relative;
 }
 .collection_container > .collection_card{
     width: 100%;
-    margin: 0 0 20px;
+    margin-bottom: 3rem;
     overflow: hidden;
     break-inside: avoid;
+    box-shadow: 0 10px 20px rgba(0 , 0 , 0 , 0.1);
 }
 .collection_card > img{
     width: 100%;
+    border-radius: 10px;
 }
 .collection_card > h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: #3d3d3d;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
 }
 .collection_card > span{
     color: #304991;
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.255rem;
+    margin-bottom: 0.2rem;
     display: block;
+    padding-left: 1rem;
 }
 .collection_card > p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #999;
+    padding-left: 1rem;
+    padding-bottom: 1.3rem;
 }
-
-
+.more_btn{
+  width: max-content;
+  font-size: 1.3rem;
+  display: block;
+  margin: 3rem auto;
+  text-align: center;
+  background-color: #304991;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 3.5rem;
+  box-shadow: 0 10px 20px rgba(0 , 0 , 0 , 0.1);
+}
 
 
 
