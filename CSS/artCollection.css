@@ -1618,10 +1618,13 @@ body{
   letter-spacing: 1px;
   margin: 2.5rem auto;
 }
+.collection .art_collection .art_description > p:first-of-type{
+  width: 50%;
+}
 .collection .art_collection .art_description a{
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem !important;
+  font-size: 1.7rem !important;
   margin-top: 1rem;
   font-weight: 400 !important;
 } 

@@ -444,7 +444,7 @@
     </section>
 
     <!-- Exhibition Section -->
-    <section class="exhibition">
+    <section class="exhibition" id="exhibition">
         <div class="exhibition_heading">
             <div>
                 <h1>Exhibitions</h1>
@@ -463,7 +463,7 @@
                         <a href="#">In Transmission हस्तांतरण</a>
                         <span>NGMA Delhi</span>
                     </div>
-                    <button><a href="#popup">KNOW MORE</a></button>
+                    <button><a href="#popup-1">KNOW MORE</a></button>
                     <small>Coming Soon</small>
                 </div>
                 <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
@@ -472,7 +472,7 @@
                         <a href="#">The Life & Work of Nicholas Roerich (1878 - 1947)</a>
                         <span>Virtual</span>
                     </div>
-                    <button><a href="#popup">KNOW MORE</a></button>
+                    <button><a href="#popup-3">KNOW MORE</a></button>
                     <small>Ongoing</small>
                 </div>
                 <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
@@ -484,12 +484,12 @@
                     <button><a href="#popup">KNOW MORE</a></button>
                 </div>
                 <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
-                    <img src="./image/e&e_6.jpeg" alt="">
+                    <img src="./image/e&e_12.png" alt="">
                     <div class="card_content">
                       <a href="#">Jamini Roy (1887 - 1972)</a>
                       <span>Virtual</span>
                     </div>
-                    <button><a href="#popup">KNOW MORE</a></button>
+                    <button><a href="#popup-2">KNOW MORE</a></button>
                 </div>
                 <div class="card carousel-cell" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
                     <img src="./image/e&e_7.jpeg" alt="">
@@ -810,7 +810,7 @@
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                     <span>Friday closing hours vary</span>
                 </div>
-                <button>See the detailed calender <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button> <a style="text-decoration: none; color: white;" href="./Pages/planVisit.html">See the detailed calender <i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
                 <div class="logos">
                     <img src="./image/4-NGMA - 1.png" alt="">
                     <img src="./image/5-soham.png" alt="">
@@ -872,10 +872,10 @@
                     <a href="./Pages/contactUs.html">Contact Us  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="footer_col-3-icons">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <a href="https://twitter.com/ngma_delhi"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UCrz1pygtJ-t1F2ZzPG4CFKA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/ngma.delhi/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/ngmadelhi/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 </div>
                 <div class="footer_col-3-info">
                     <span>Download our application</span>
@@ -883,17 +883,51 @@
                 </div>
             </div>
         </footer>
-        <div class="popup" id="popup">
+        <div class="popup" id="popup-1">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src="./image/e&e_6.jpeg" alt="" class="popup__img">
+                    <img src="./image/e&e_13.jpeg" alt="" class="popup__img">
                 </div>
                 <div class="popup__right">
-                    <a href="#" class="popup__close">&times;</a>
+                    <a href="#exhibition" class="popup__close">&times;</a>
+                    <h2>Exhibition Overview</h2>
+
+                    <p class="popup__text">
+                        Exhibition Coming Soon
+                    </p>
+                    <a href="http://ngmaindia.gov.in/exhibitions.asp" class="popup_btn">View More</a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup-2">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/e&e_12.png" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#exhibition" class="popup__close">&times;</a>
                     <h2>Exhibition Overview</h2>
 
                     <p class="popup__text">From the end 1920s, Jamini Roy rejected the European oil medium and began to use the traditional pigments from vegetable and mineral sources. The imagery was often drawn from village life. Jamini Roy invested in the portrayal of peasants, artisans, followers of religious cults, village women and adivasis with immense dignity. He represented in his paintings what they held sacred with references from folk tales and narratives that permeated the rural consciousness. In this particular painting, one of his most iconic, the three women depicted as they worship, have been painted with thick, black contour lines with the application of the blue colour of the drape done flatly.
                         The rustic figures and village society feature prominently in the paintings of Jamini Roy. It helped him to communicate with ordinary people because he was entering their familiar world of imagination.
+                    </p>
+                    <a href="http://ngmaindia.gov.in/exhibitions.asp" class="popup_btn">View More</a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup" id="popup-3">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./image/e&e_4.jpeg" alt="" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#exhibition" class="popup__close">&times;</a>
+                    <h2>Exhibition Overview</h2>
+
+                    <p class="popup__text">    
+                        Nicholas Roerich was born in St. Petersburg, Russia, on October 9, 1874, the first-born son of lawyer and notary, Konstantin Roerich and his wife Maria. He was raised in the comfortable environment of an upper middle-class Russian family with its advantages of contact with the writers, artists, and scientists who often came to visit the Roerichs. At an early age he showed a curiosity and talent for a variety of activities.
                     </p>
                     <a href="http://ngmaindia.gov.in/exhibitions.asp" class="popup_btn">View More</a>
                 </div>

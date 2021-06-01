@@ -144,12 +144,25 @@ body{
     margin-bottom: 0.9rem;
     letter-spacing: 0.1px;
     line-height: 27px;
+    display: flex;
+    align-items: flex-start;
 }
-.planvisit_content-left > ul > li:last-child{
-    font-size: 1.255rem;
-    font-weight: bold;
-    color: #3d3d3d;
+.planvisit_content-left > span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
 }
+.planvisit_content-left > p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.planvisit_content-left > ul > li > img{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
 .planvisit_content-right > span{
     display: block;
     font-size: 1.4rem;
@@ -429,8 +442,9 @@ body{
 .footer_col-3-links > a > i{
     color: #3d3d3d;
 }
-.footer_col-3-icons > i{
+.footer_col-3-icons  i{
     font-size: 2rem;
+    color: black;
 }
 .footer_col-3-icons > i:not(:last-child){margin-right: 1rem;}
 
