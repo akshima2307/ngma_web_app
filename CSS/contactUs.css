@@ -83,7 +83,7 @@ body{
     padding: 0 0.4rem; }
   
   .nav_links > ul > a:nth-child(1) > img {
-    width: 5rem; }
+    width: 3rem; }
   
   .nav_links > ul > a:nth-child(2) > img {
     width: 3rem; }
@@ -206,6 +206,7 @@ body{
     color: #000;
 }
 .tab_content > div > h2{
+    font-weight: 500;
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
     color: #304991;
