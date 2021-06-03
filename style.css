@@ -2006,6 +2006,50 @@ figure.effect-julia:hover p {
     border-radius: 3px;
     display: table;
     overflow: hidden; }
+    .popup__content > .virtual_tour-heading {
+      font-size: 2rem;
+      display: block;
+      margin-top: 3rem;
+      margin-left: 3rem; }
+    .popup__content > .virtual_tour-div {
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      .popup__content > .virtual_tour-div > a {
+        text-decoration: none;
+        text-align: center; }
+        .popup__content > .virtual_tour-div > a:not(:last-child) {
+          margin-right: 1rem; }
+        .popup__content > .virtual_tour-div > a > img {
+          width: 12rem;
+          height: 12rem;
+          object-fit: cover;
+          border-radius: 50%; }
+        .popup__content > .virtual_tour-div > a > i {
+          color: #304991;
+          position: relative;
+          text-align: center;
+          margin: auto;
+          margin-top: -2rem;
+          z-index: 100;
+          width: max-content;
+          padding: 0.6rem 1.2rem;
+          font-size: 2rem;
+          border-radius: 50%;
+          display: block;
+          background: white;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+        .popup__content > .virtual_tour-div > a > span {
+          margin-top: 1rem;
+          display: block;
+          color: #3d3d3d;
+          font-size: 1.3rem; }
+        .popup__content > .virtual_tour-div > a > small {
+          margin-top: 0.5rem;
+          display: block;
+          color: #304991;
+          font-size: 1rem; }
   .popup__left {
     width: 40%;
     display: table-cell; }

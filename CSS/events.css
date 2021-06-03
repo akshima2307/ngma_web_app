@@ -613,3 +613,80 @@ body{
     transform: rotate(180deg);
 }
 
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all .3s; }
+    .popup:target {
+      opacity: 1;
+      visibility: visible; }
+    .popup__close:link, .popup__close:visited {
+      color: #000;
+      position: absolute;
+      top: 2rem;
+      right: 4rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block; }
+    .popup__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      background-color: white;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      display: table;
+      overflow: hidden; }
+      .popup__content > .virtual_tour-heading {
+        font-size: 2rem;
+        display: block;
+        margin-top: 3rem;
+        margin-left: 3rem; }
+      .popup__content > .virtual_tour-div {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .popup__content > .virtual_tour-div > a {
+          text-decoration: none;
+          text-align: center; }
+          .popup__content > .virtual_tour-div > a:not(:last-child) {
+            margin-right: 1rem; }
+          .popup__content > .virtual_tour-div > a > img {
+            width: 12rem;
+            height: 12rem;
+            object-fit: cover;
+            border-radius: 50%; }
+          .popup__content > .virtual_tour-div > a > i {
+            color: #304991;
+            position: relative;
+            text-align: center;
+            margin: auto;
+            margin-top: -2rem;
+            z-index: 100;
+            width: max-content;
+            padding: 0.6rem 1.2rem;
+            font-size: 2rem;
+            border-radius: 50%;
+            display: block;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+          .popup__content > .virtual_tour-div > a > span {
+            margin-top: 1rem;
+            display: block;
+            color: #3d3d3d;
+            font-size: 1.3rem; }
+          .popup__content > .virtual_tour-div > a > small {
+            margin-top: 0.5rem;
+            display: block;
+            color: #304991;
+            font-size: 1rem; }
