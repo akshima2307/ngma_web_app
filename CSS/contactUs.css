@@ -205,6 +205,9 @@ body{
     font-size: 1.3rem;
     color: #000;
 }
+.tab_content{
+  width: 50%;
+}
 .tab_content > div > h2{
     font-weight: 500;
     margin-top: 2.5rem;
@@ -215,6 +218,30 @@ body{
     font-size: 1.3rem;
     margin-bottom: 1rem;
     display: block;
+}
+.tab_content > div > table{
+  width: 200%;
+  margin-bottom: 5rem;
+}
+.tab_content> div > table tr:first-child{
+  background-color: #304991;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.tab_content> div > table tr:first-child > th{
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  padding: 1.2rem 0;
+}
+.tab_content> div > table  tr{
+  text-align: center;
+}
+.tab_content> div > table  tr > td{
+  padding: 0.6rem 3.5rem;
+  border-bottom: 1px solid rgb(201, 200, 200);
+  font-size: 1.1rem;
 }
 
 
