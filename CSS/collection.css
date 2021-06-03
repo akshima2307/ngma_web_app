@@ -99,12 +99,17 @@ body{
       text-decoration: solid !important; 
 }
 .collection{
-    padding: 3rem;
     margin-top: 7rem;
+    padding-bottom: 3rem;
 }
 .collection_header{
     text-align: center;
 }
+.collection_header > img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+} 
 /* .collection_input{position: relative;}
 .collection_input > input{
     width: 90%;
@@ -242,7 +247,7 @@ body{
     position: relative;
     font-size: 2.4rem;
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
 .collection_navigation{
