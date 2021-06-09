@@ -113,16 +113,33 @@ window.onscroll = function(){
   }
 };
 
-// const previewBtn = document.querySelector('.control-prev-btn');
-// const nextBtn = document.querySelector('.control-next-btn');
-// const exploreCards = document.querySelector('.explore_cards');
 
-// nextBtn.addEventListener('click', function(){
-//   exploreCards.style.transform = 'translateX(-100vw)';
-// });
-// previewBtn.addEventListener('click', function(){
-//   exploreCards.style.transform = 'translateX(0)';
-// });
+//Timeline
+const tabItems = document.querySelectorAll('.timeline-tab-item');
+const tabContentItems = document.querySelectorAll('.timeline-tab-content-item');
 
+function selectItem(e) {
+  removeShow();
+  removeBorder();
+  const tabContentItem = document.querySelector(`#${this.id}-content`);
+  const tabItem = document.querySelector(`#${this.id}`);
+  tabContentItem.classList.add('show');
+  tabItem.childNodes[5].style.opacity = "1";
+}
 
-// Footer Cards
+function removeBorder() {
+  tabItems.forEach(item => {
+    item.childNodes[5].style.opacity = "0";
+  })
+}
+
+function removeShow() {
+  tabContentItems.forEach(item => {
+    item.classList.remove('show');
+  });
+}
+
+tabItems.forEach(item => {
+  item.addEventListener('click', selectItem);
+})
+

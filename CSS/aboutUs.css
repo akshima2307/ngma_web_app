@@ -101,7 +101,7 @@ body{
 .about_header{
     margin-top: 7rem;
     position: relative;
-    background-image:linear-gradient(to right bottom , rgba(45, 67, 134,0.4), rgba(64, 96, 191,0.4), rgba(40, 180, 133,0.4)), url("../image/header_1.png");
+    background-image: url("../image/header_1.png");
     width: 100%;
     height: 40vh;
     background-repeat: no-repeat;

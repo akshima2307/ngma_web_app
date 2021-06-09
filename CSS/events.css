@@ -100,16 +100,21 @@ body{
 }
 .events{
     margin-top: 7rem;
-    padding: 3rem;
     min-height: 60rem;
 }
 .events_header{
     text-align: center;
 }
+.events_header-img{
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+}
 .events_heading{
-  background-image: linear-gradient(to right bottom, #2d4386, #28b485);;
-  -webkit-background-clip: text;
-  color: transparent;
+    padding: 2rem 0 0 0;
+    background-image: linear-gradient(to right bottom, #2d4386, #28b485);;
+    -webkit-background-clip: text;
+    color: transparent;
     position: relative;
     font-size: 2.4rem;
     font-weight: 500;
@@ -117,6 +122,7 @@ body{
 }
 .events_navigation{
     padding: 1rem;
+    margin: 0 3rem;
     border-bottom: 1px solid #e6e5e5;
     border-top: 1px solid #e6e5e5;
     background-image:  linear-gradient(to right, #2d4386, #4060bf);
@@ -200,6 +206,7 @@ body{
 
 .events_content{
     position: relative;
+    padding: 0 3rem;
 }
 .events_card{
     width: 60%;

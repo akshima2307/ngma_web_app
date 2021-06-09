@@ -1,0 +1,118 @@
+.timeline{
+    margin: 3rem 0;
+    text-align: center;
+    & > h2{
+        color: $Primary-color;
+        margin-bottom: 0.7rem;
+    }
+}
+.timeline_nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0 1rem;
+  width: 100vw;
+  & > li{
+    position: relative;
+    display: block;
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    margin-bottom: 2rem;
+    & > span{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.8rem;
+        color: white;
+    }
+    & > small{
+        color: white;
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding-top: 0.8rem;
+        display: block;
+    }
+    & > .fa-caret-up{
+        position: absolute;
+        font-size: 1.3rem;
+        color: #3d3d3d;
+        opacity: 0;
+    }
+  }
+  & > li:nth-child(1), & > li:nth-child(6){
+    background: #ff535f;
+  }
+  & > li:nth-child(2), & > li:nth-child(7){
+    background: #264e56;
+  }
+  & > li:nth-child(3), & > li:nth-child(8){
+    background: #feb041;
+  }
+  & > li:nth-child(4), & > li:nth-child(9){
+    background: #72a994;
+  }
+  & > li:nth-child(5), & > li:nth-child(10){
+    background: #ff7335;
+  }
+}
+
+.timeline-tab-content {
+    height: max-content;
+    padding: 0 5rem;
+    color: #3C3B37;
+  }
+.timeline-tab-content-item{
+    &  .content{
+        display: flex;
+        justify-content: space-between;
+        & > img {
+          width: 19rem;
+          height: 19rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        &__text{
+          width: 60%;
+          & > h1{margin-bottom: 1rem;}
+          & > p {
+              text-align: justify;
+          }
+          & > a{text-decoration: none;}
+          & > a > button{
+            border: none;
+            outline: none;
+            color: $Primary-color;
+            background: white;
+            font-size: 1.1rem;
+            margin-top: 0.8rem;
+            float: left;
+          }
+        }
+      }
+}
+
+  
+  
+  #tab-1-content,
+  #tab-2-content,
+  #tab-3-content,
+  #tab-4-content,
+  #tab-5-content,
+  #tab-6-content,
+  #tab-7-content,
+  #tab-8-content,
+  #tab-9-content,
+  #tab-10-content
+  {
+
+    display: none;
+  }
+  
+  .show {
+    display: block !important;
+  }
+  .timeline-active{opacity: 1 !important;}
