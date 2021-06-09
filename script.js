@@ -98,11 +98,11 @@ const hideBtn = function(ele){
 }
 
 // Navbar position fixed
-var height = document.getElementById("news").offsetTop;
-
+var height = document.getElementById("collection").offsetTop;
+console.log(height);
 window.onscroll = function(){
   const navigationLogo = document.querySelector('.navigation_logo');
-  if (window.pageYOffset >= height) {
+  if (window.pageYOffset > height) {
     document.getElementById('navbar').classList.add('fixed');
     document.getElementById('navbar').style.display = "flex";
 
