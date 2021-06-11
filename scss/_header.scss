@@ -14,7 +14,6 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     background: white;  
     box-shadow: 0 10px 20px rgba( black, .2); 
     border-bottom: 4px solid  $Primary-color;
-    z-index: 100;
 }
 .navigation_logo-1{
    width: 12rem;
@@ -74,7 +73,7 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     border: 1px solid #3d3d3d;
 }
 .dropdown {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0 0.5rem;
   position: relative;
   display: inline-block;
@@ -165,7 +164,7 @@ $Primary-linear-gradient: linear-gradient(to right bottom, #2d4386, #4060bf, #28
     position: fixed;
     top: 0%;
     width: 100%;
-    z-index: 1000;
+    z-index: 100000;
 }
 .active{
     border-bottom: 3px solid #304991;
