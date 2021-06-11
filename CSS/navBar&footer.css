@@ -160,8 +160,6 @@
   width: 100%;
   z-index: 1000; }
 
-.active {
-  border-bottom: 3px solid #304991; }
 
 .headerLogo {
   width: 3.5rem;

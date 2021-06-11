@@ -2196,7 +2196,9 @@ figure.effect-julia:hover p {
 .timeline {
   padding: 3rem 0;
   text-align: center;
-  background-color: #f5f3f3; }
+  background-image: url("./image/parikraman_background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .timeline > h2 {
   color: #304991;
