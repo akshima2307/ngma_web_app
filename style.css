@@ -2254,14 +2254,14 @@ figure.effect-julia:hover p {
   object-fit: cover;
   position: absolute;
   padding: 4px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10; }
 
 .timeline_nav > a > strong {
   position: absolute;
   width: 2.5px;
   height: 4rem;
-  background-color: #3d3d3d;
-  z-index: -100; }
+  background-color: #3d3d3d; }
 
 .timeline_nav > a:nth-child(1) > img, .timeline_nav > a:nth-child(3) > img, .timeline_nav > a:nth-child(5) > img,
 .timeline_nav > a:nth-child(7) > img, .timeline_nav > a:nth-child(9) > img {
